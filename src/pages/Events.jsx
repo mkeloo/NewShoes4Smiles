@@ -94,7 +94,7 @@ const Events = () => {
       data-aos-delay="300"
       // translateX={['-100px', '100px']}
       id="calendar"
-      className="w-full h-full grid grid-row-2 py-14 justify-center items-center bg-[#607EAA]"
+      className="w-[100vw] h-[100vh] grid grid-row-2 py-14 justify-center items-center bg-[#607EAA]"
     >
       <div className=" rounded-2xl md:mx-0 md:p-0 mx-4 p-2">
         <h1 className="lg:text-7xl md:text-4xl text-[#EAE3D2]  p-6 m-6  text-3xl font-bold py-6 pb-4 flex justify-center">

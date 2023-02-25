@@ -31,7 +31,7 @@ const Hero2 = () => {
   return (
     <section className="w-[100vw] h-[100vh] bg-[#060229] px-24 pt-[80px] flex flex-col md:flex-row items-center md:justify-center -z-10">
       <div className="md:w-1/2 p-8 z-10 mt-8 ">
-        <h1 className="text-5xl md:text-6xl font-bold  text-[#F9F5EB] mb-8">
+        <h1 className=" text-5xl md:text-6xl font-bold   text-[#F9F5EB] mb-8">
           Help Donate Shoes to People in Need
         </h1>
         <p className="text-lg md:text-xl text-[#F9F5EB] mb-8">
