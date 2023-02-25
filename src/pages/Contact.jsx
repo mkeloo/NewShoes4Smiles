@@ -39,12 +39,12 @@ const Contact = () => {
     <div
       // translateX={['160px', '-200px']}
       id="contact"
-      className="w-full h-full  flex justify-center items-center p-2  "
+      className="w-full h-full bg-[#607EAA]  flex justify-center items-center p-2  "
       data-aos="fade-down"
       data-aos-duration="600"
       data-aos-delay="300"
     >
-      <div className="bg-[#607EAA] rounded-2xl md:mx-0 md:p-0 mx-4 mt-8 flex">
+      <div className=" rounded-2xl md:mx-0 md:p-0 mx-4 mt-8 flex">
         <form
           ref={form}
           onSubmit={sendEmail}

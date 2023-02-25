@@ -36,7 +36,7 @@ const ShoeDriveChange = () => {
       data-aos-duration="600"
       data-aos-delay="300"
       id="shoedrive"
-      className="w-full h-full flex justify-center items-center "
+      className="w-full h-full flex justify-center items-center bg-[#607EAA] "
     >
       {/* Different card: bg-orange-300 rounded-3xl shadow-xl shadow-orange-200  */}
       <div className=" bg-[#607EAA] w-full md:flex md:grid-cols-2 md:p-8 md:mx-16 m-10 grid-col-reverse rounded-2xl mx-4 p-2">

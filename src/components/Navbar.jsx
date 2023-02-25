@@ -129,7 +129,7 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <div className="text-3xl text-bold m-8">Navbar</div>
+      {/* <div className="text-3xl text-bold m-8">Navbar</div> */}
       <div>
         <ul className="flex m-2">
           <li className="p-2">
