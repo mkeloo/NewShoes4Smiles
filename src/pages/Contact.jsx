@@ -39,19 +39,21 @@ const Contact = () => {
     <div
       // translateX={['160px', '-200px']}
       id="contact"
-      className="w-full h-full bg-[#607EAA]  flex justify-center items-center p-2  "
+      className="w-[100vw] h-[100vh] bg-[#607EAA]  flex justify-center items-center p-2 -z-10  "
       data-aos="fade-down"
       data-aos-duration="600"
       data-aos-delay="300"
     >
+      <div className="absolute -z-1 w-[50%] h-[50%] left-20 top-20 white__gradient" />
+      <div className="absolute -z-2 w-[50%] h-[50%] left-20 top-20 blue__gradient" />
       <div className=" rounded-2xl md:mx-0 md:p-0 mx-4 mt-8 flex">
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col max-w-[600px] w-full my-5 px-8 "
+          className="flex flex-col max-w-[600px] w-full my-5 px-8 z-10 "
         >
           <div className="pb-7 group">
-            <h1 className="lg:text-6xl md:text-4xl text-[#EAE3D2]  text-3xl font-bold py-6 pb-4">
+            <h1 className="lg:text-5xl md:text-4xl text-[#EAE3D2] mt-8  text-3xl font-bold py-7 ">
               Contact Us
             </h1>
             <p className="text-md md:text-lg lg:text-2xl text-[#F9F5EB]">
@@ -90,7 +92,7 @@ const Contact = () => {
             onMouseLeave={() => setSmile(false)}
             type="submit"
             value="Send"
-            className="text-black group md:text-lg border-4 px-3 py-2 md:px-3 md:py-4 border-black my-2 flex items-center justify-center hover:bg-orange-600 hover:font-bold hover:border-orange-900 duration-300 hover:scale-110 rounded-lg"
+            className="text-black group md:text-lg border-4 bg-orange-400 px-3 py-2 md:px-3 md:py-4 border-orange-900 my-2 flex items-center justify-center hover:text-white hover:bg-blue-400 hover:font-bold hover:border-blue-900 duration-300 hover:scale-110 rounded-lg shadow-orange-600 shadow-lg hover:shadow-lg hover:shadow-blue-500"
           >
             Let's Collaborate
             <span className="duration-300">
@@ -102,6 +104,8 @@ const Contact = () => {
             </span>
           </button>
         </form>
+
+        <div className="absolute z-[1] w-[50%] h-[50%] right-20 bottom-20 pink__gradient" />
       </div>
     </div>
   );

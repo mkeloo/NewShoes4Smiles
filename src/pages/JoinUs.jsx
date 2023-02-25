@@ -40,7 +40,7 @@ const JoinUs = () => {
     <div
       // translateX={['-100px', '100px']}  bg-blue-200
       id="join"
-      className="w-full h-full bg-[#89CFF0] flex justify-center items-center mb-8 md:mb-0 mt-20"
+      className="w-[100vw] h-[100vh] bg-[#89CFF0] flex justify-center items-center mb-8 md:mb-0 mt-10"
       data-aos="fade-down"
       data-aos-duration="600"
       data-aos-delay="300"

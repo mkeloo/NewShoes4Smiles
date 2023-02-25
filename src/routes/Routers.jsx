@@ -7,6 +7,7 @@ import Contact from '../pages/Contact';
 import Events from '../pages/Events';
 import JoinUs from '../pages/JoinUs';
 import ShoeDrive from '../pages/ShoeDrive';
+import Donate from '../pages/Donate';
 
 function Routers() {
   return (
@@ -18,6 +19,8 @@ function Routers() {
       <Route path="/events" element={<Events />} />
       <Route path="/join-us" element={<JoinUs />} />
       <Route path="/shoe-drive" element={<ShoeDrive />} />
+      <Route path="/donate" element={<Donate />} />
+      <Route path="*" element={<Navigate to="/home" />} />
     </Routes>
   );
 }

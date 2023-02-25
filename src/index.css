@@ -100,6 +100,38 @@
   }
 }
 
+.orange__gradient {
+  background: linear-gradient(180deg, rgba(255, 123, 111, 0) 0%, #fa7202 100%);
+  filter: blur(123px);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(107, 58, 255, 0) 0%, #5db1ff 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+}
+
 /* Underline Animation Styles */
 /* link link-underline link-underline-black */
 

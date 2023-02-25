@@ -13,7 +13,7 @@ function App() {
     }, 1700);
   }, []);
   return (
-    <div className="bg-[#F9F5EB] overflow-hidden	">
+    <div className="bg-[#060229] overflow-hidden	">
       {loading ? (
         <div className="grid  justify-center bg-[#0d013b] items-center w-[100vw] h-[100vh]">
           <div className="h-[40%]" />

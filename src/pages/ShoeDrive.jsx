@@ -3,31 +3,31 @@ import ShoedrivePic from '../assets/ShoeDrive.png';
 import Shoe1 from '../assets/shoeDr1.jpg';
 import Shoe2 from '../assets/shoeDr2.jpg';
 import Shoe3 from '../assets/shoeDr3.jpg';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Pagination, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-// const images = [
-//   {
-//     id: 1,
-//     src: Shoe2,
-//     alt: 'shoe2',
-//   },
-//   {
-//     id: 2,
-//     src: Shoe1,
-//     alt: 'shoe1',
-//   },
-//   {
-//     id: 3,
-//     src: Shoe3,
-//     alt: 'shoe3',
-//   },
-// ];
+const images = [
+  {
+    id: 1,
+    src: Shoe2,
+    alt: 'shoe2',
+  },
+  {
+    id: 2,
+    src: Shoe1,
+    alt: 'shoe1',
+  },
+  {
+    id: 3,
+    src: Shoe3,
+    alt: 'shoe3',
+  },
+];
 
-const ShoeDriveChange = () => {
+const ShoeDrive = () => {
   return (
     <div
       // translateX={['215px', '-235px']}
@@ -40,13 +40,14 @@ const ShoeDriveChange = () => {
     >
       {/* Different card: bg-orange-300 rounded-3xl shadow-xl shadow-orange-200  */}
       <div className=" bg-[#607EAA] w-full md:flex md:grid-cols-2 md:p-8 md:mx-16 m-10 grid-col-reverse rounded-2xl mx-4 p-2">
-        {/* <Swiper
+        {/* Small Screen Picture using Swiper */}
+        <Swiper
           modules={[Pagination, Autoplay]}
           autoplay={{ delay: 3000 }}
           slidesPerView={1}
           pagination={{ clickable: true }}
           loop={true}
-          className="object-contain md:w-[400px] md:h-[540px] w-[200px] h-[310px] mt-10  lg:hidden flex "
+          className=" lg:hidden flex object-contain md:w-[400px] md:h-[540px] w-[200px] h-[310px] mt-10  "
         >
           {images.map(({ id, src, alt }) => {
             return (
@@ -61,7 +62,9 @@ const ShoeDriveChange = () => {
               </SwiperSlide>
             );
           })}
-        </Swiper> */}
+        </Swiper>
+
+        {/* Large Screen Picture */}
         <div className="flex justify-center items-center">
           <img
             src={ShoedrivePic}
@@ -69,6 +72,8 @@ const ShoeDriveChange = () => {
             className="lg:w-[700px] lg:h-[750px] lg:flex hidden  md:mt-8 m-5 object-contain rounded-2xl  shadow-black"
           />
         </div>
+
+        {/* Content */}
         <div className="flex flex-col justify-center px-10 md:max-w-[55%] max-w-full mb-5">
           <h1 className="lg:text-6xl  md:text-4xl text-[#EAE3D2] text-3xl font-bold py-6 pb-4">
             Shoe Drive
@@ -124,4 +129,4 @@ We believe in the power of coming together to make a positive impact and are pro
   );
 };
 
-export default ShoeDriveChange;
+export default ShoeDrive;
