@@ -32,11 +32,16 @@ const Hero2 = () => {
     <section className="w-[100vw] h-[100vh] bg-[#060229] px-24 pt-[80px] flex flex-col md:flex-row items-center md:justify-center -z-10">
       <div className="md:w-1/2 p-8 z-10 mt-8 ">
         <h1 className=" text-5xl md:text-6xl font-bold   text-[#F9F5EB] mb-8">
-          Help Donate Shoes to People in Need
+          {/* Help Donate Shoes to People in Need */}
+          {/* Donating Shoes to Community */}
+          <span className="text-orange-500">
+            From your closet to their feet:{' '}
+          </span>
+          Donate your shoes to those in need.
         </h1>
         <p className="text-lg md:text-xl text-[#F9F5EB] mb-8">
-          Providing shoes and other necessities to people in local,
-          disadvantaged communities.
+          Providing shoes and other necessities to people in Gainesville's
+          underserved communities.
         </p>
         <div className="flex flex-col md:flex-row">
           <button className="p-4 px-8 text-xl bg-lime-600 font-poppins font-bold rounded-lg text-blue-900  shadow-md hover:shadow-cyan-500 hover:bg-blue-600 hover:shadow-lg hover:text-white duration-300">
@@ -47,7 +52,7 @@ const Hero2 = () => {
           </button>
         </div>
         <div className=" my-8 flex items-center p-4">
-          <div className="text-5xl font-bold text-orange-500 mr-4">500+</div>
+          <div className="text-5xl font-bold text-orange-500 mr-4">1200+</div>
           <div className="text-xl text-[#F9F5EB] font-poppins font-bold">
             pairs of shoes donated
           </div>

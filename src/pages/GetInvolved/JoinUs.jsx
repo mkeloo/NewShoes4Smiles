@@ -1,5 +1,5 @@
 import React from 'react';
-import Join from '../assets/join.jpg';
+import Join from '../../assets/join.jpg';
 import { HiUserGroup } from 'react-icons/hi';
 import { FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 

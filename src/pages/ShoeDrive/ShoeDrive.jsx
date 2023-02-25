@@ -1,8 +1,8 @@
 import React from 'react';
-import ShoedrivePic from '../assets/ShoeDrive.png';
-import Shoe1 from '../assets/shoeDr1.jpg';
-import Shoe2 from '../assets/shoeDr2.jpg';
-import Shoe3 from '../assets/shoeDr3.jpg';
+import ShoedrivePic from '../../assets/ShoeDrive.png';
+import Shoe1 from '../../assets/shoeDr1.jpg';
+import Shoe2 from '../../assets/shoeDr2.jpg';
+import Shoe3 from '../../assets/shoeDr3.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -36,7 +36,7 @@ const ShoeDrive = () => {
       data-aos-duration="600"
       data-aos-delay="300"
       id="shoedrive"
-      className="w-full h-full flex justify-center items-center bg-[#607EAA] "
+      className="w-[100vw] h-[100vh] flex justify-center items-center bg-[#607EAA] "
     >
       {/* Different card: bg-orange-300 rounded-3xl shadow-xl shadow-orange-200  */}
       <div className=" bg-[#607EAA] w-full md:flex md:grid-cols-2 md:p-8 md:mx-16 m-10 grid-col-reverse rounded-2xl mx-4 p-2">

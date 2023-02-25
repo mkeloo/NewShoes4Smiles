@@ -76,18 +76,18 @@ const Navbar = () => {
     },
     {
       id: 2,
-      title: 'About',
+      title: 'Who We Are',
       url: 'about',
     },
     {
       id: 3,
-      title: 'Shoe Drive',
-      url: 'shoe-drive',
+      title: 'What We Do',
+      url: 'what-we-do',
     },
     {
       id: 4,
-      title: 'Join Us',
-      url: 'join-us',
+      title: 'Get Involved',
+      url: 'get-involved',
     },
     {
       id: 5,
@@ -267,11 +267,11 @@ const Navbar = () => {
             return (
               <li
                 key={id}
-                className="w-[180px] h-[60px] flex justify-between items-center ml-[-125px] hover:ml-[-2px] duration-500 rounded-md  bg-[#060229]"
+                className="w-[180px] h-[60px] flex justify-between items-center ml-[-125px] hover:ml-[-2px] duration-500 rounded-md  bg-cyan-800 "
                 // bg-[#f7aa80]
               >
                 <a
-                  className="flex justify-between text-xl px-2 m-2 items-center w-full font-bold hover:text-orange-400 text-white"
+                  className="flex justify-between text-xl px-2 m-2 items-center w-full font-bold hover:text-orange-300 text-white"
                   href={url}
                   target="_blank"
                   rel="noreferrer"
