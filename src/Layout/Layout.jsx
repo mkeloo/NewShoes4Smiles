@@ -7,7 +7,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 const Layout = () => {
   return (
     <ParallaxProvider>
-      <Navbar />
+      {/* <Navbar /> */}
       <div>
         <Routers />
       </div>
