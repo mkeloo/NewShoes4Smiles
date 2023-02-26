@@ -10,7 +10,7 @@ const OriginStory = () => {
           <img
             src={FounderPic}
             alt="founder"
-            className="lg:w-[600px] lg:h-[650px] lg:flex hidden  md:mt-8 m-5 object-contain rounded-2xl  shadow-black"
+            className="lg:w-[550px] lg:h-[680px] lg:flex hidden  md:mt-8 m-5 rounded-2xl shadow-lg shadow-orange-500"
           />
         </div>
 
