@@ -91,13 +91,13 @@ const Navbar = () => {
     },
     {
       id: 5,
-      title: 'Contact',
-      url: 'contact',
+      title: 'Events',
+      url: 'events',
     },
     {
       id: 6,
-      title: 'Events',
-      url: 'events',
+      title: 'Contact',
+      url: 'contact',
     },
   ];
 
@@ -109,28 +109,33 @@ const Navbar = () => {
     },
     {
       id: 2,
-      title: 'About',
+      title: 'Who We Are',
       url: 'about',
     },
     {
       id: 3,
-      title: 'Shoe Drive',
-      url: 'shoe-drive',
+      title: 'What We Do',
+      url: 'what-we-do',
     },
     {
       id: 4,
-      title: 'Join Us',
-      url: 'join-us',
+      title: 'Get Involved',
+      url: 'get-involved',
     },
     {
       id: 5,
+      title: 'Events',
+      url: 'events',
+    },
+    {
+      id: 6,
       title: 'Contact',
       url: 'contact',
     },
     {
-      id: 6,
-      title: 'Events',
-      url: 'events',
+      id: 7,
+      title: 'Donate',
+      url: 'donate',
     },
   ];
   // return (
@@ -205,7 +210,7 @@ const Navbar = () => {
         // // exact="true"
         // offset={-90}
       >
-        <button className="p-3 px-7 mx-5 bg-lime-600 font-bold rounded-lg text-blue-900  shadow-md hover:shadow-cyan-500 hover:bg-blue-600 hover:shadow-lg hover:scale-110 hover:text-white duration-300">
+        <button className="p-3 hidden md:flex px-7 mx-5 bg-lime-600 font-bold rounded-lg text-blue-900  shadow-md hover:shadow-cyan-500 hover:bg-blue-600 hover:shadow-lg hover:scale-110 hover:text-white duration-300">
           Donate
         </button>
       </Link>

@@ -19,12 +19,7 @@ const Mission = () => {
             time.
           </p>
         </div>
-        <div
-          className="flex justify-center items-center"
-          data-aos="fade-up"
-          data-aos-duration="400"
-          data-aos-delay="300"
-        >
+        <div className="flex justify-center items-center">
           <img
             src={about1}
             alt="about1"

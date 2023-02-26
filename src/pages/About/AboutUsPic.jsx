@@ -8,7 +8,7 @@ const AboutUsPic = () => {
         <img
           src={pic}
           alt="pic"
-          className=" object-conver h-full w-full mt-20 "
+          className=" object-cover h-full w-full mt-20 "
         />
         {/* <div className="bg-black/30 absolute top-0 left-0 w-full h-screen mt-20"  -translate-x-1/2 -translate-y-1/2  /> */}
         <div className="absolute text-2xl md:text-7xl text-white bottom-80 left-40 opacity-90 ">
