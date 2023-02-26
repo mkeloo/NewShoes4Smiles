@@ -1,5 +1,5 @@
 import React from 'react';
-import ShoedrivePic from '../../assets/ShoeDrive.png';
+import ShoedrivePic from '../../assets/shoeDrive.JPG';
 import Shoe1 from '../../assets/shoeDr1.jpg';
 import Shoe2 from '../../assets/shoeDr2.jpg';
 import Shoe3 from '../../assets/shoeDr3.jpg';
@@ -9,23 +9,23 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-const images = [
-  {
-    id: 1,
-    src: Shoe2,
-    alt: 'shoe2',
-  },
-  {
-    id: 2,
-    src: Shoe1,
-    alt: 'shoe1',
-  },
-  {
-    id: 3,
-    src: Shoe3,
-    alt: 'shoe3',
-  },
-];
+// const images = [
+//   {
+//     id: 1,
+//     src: Shoe2,
+//     alt: 'shoe2',
+//   },
+//   {
+//     id: 2,
+//     src: Shoe1,
+//     alt: 'shoe1',
+//   },
+//   {
+//     id: 3,
+//     src: Shoe3,
+//     alt: 'shoe3',
+//   },
+// ];
 
 const ShoeDrive = () => {
   return (
@@ -64,7 +64,7 @@ const ShoeDrive = () => {
           <img
             src={ShoedrivePic}
             alt="about1"
-            className="lg:w-[700px] lg:h-[750px] lg:flex hidden  md:mt-8 m-5 object-contain rounded-2xl  shadow-black"
+            className="lg:w-[600px] lg:h-[580px] lg:flex hidden  md:mt-8 m-5 object-cover  shadow-black"
           />
         </div>
 
