@@ -39,7 +39,7 @@ const Contact = () => {
     <div
       // translateX={['160px', '-200px']}
       id="contact"
-      className="w-[100vw] h-[100vh] bg-[#607EAA]  flex justify-center items-center p-2 -z-10  "
+      className="w-[100vw] h-[100vh] bg-[#89CFF0]  flex justify-center items-center p-2 -z-10  "
       data-aos="fade-down"
       data-aos-duration="600"
       data-aos-delay="300"
@@ -53,10 +53,10 @@ const Contact = () => {
           className="flex flex-col max-w-[600px] w-full my-5 px-8 z-10 "
         >
           <div className="pb-7 group">
-            <h1 className="lg:text-5xl md:text-4xl text-[#EAE3D2] mt-8  text-3xl font-bold py-7 ">
+            <h1 className="lg:text-5xl md:text-4xl text-[#060229] mt-8  text-3xl font-bold py-7 ">
               Contact Us
             </h1>
-            <p className="text-md md:text-lg lg:text-2xl text-[#F9F5EB]">
+            <p className="text-md md:text-lg lg:text-2xl text-[#060229]">
               If you have any questions or would like to get involved, please
               submit the form below or email us at{' '}
               <span className="text-md md:text-lg lg:text-2xl font-bold">
@@ -65,7 +65,7 @@ const Contact = () => {
             </p>
           </div>
           <input
-            className="border-2 rounded-lg p-3 flex bg-[#ccd6f6] mb-4"
+            className="border-2 rounded-lg p-3 flex bg-[#ffb393] mb-4"
             type="text"
             name="user_name"
             value={value}
@@ -73,14 +73,14 @@ const Contact = () => {
             placeholderTextColor="black"
           />
           <input
-            className="border-3 border-orange-500 rounded-lg p-3 flex bg-[#ccd6f6]  mb-4"
+            className="border-3 border-orange-500 rounded-lg p-3 flex bg-[#ffb393]  mb-4"
             type="email"
             name="user_email"
             value={value}
             placeholder="Email"
           />
           <textarea
-            className="bg-[#ccd6f6] border-2 rounded-lg p-2 flex border-gray-300 mb-4"
+            className="bg-[#ffb393] border-2 rounded-lg p-2 flex border-gray-300 mb-4"
             name="message"
             rows="8"
             value={value}
@@ -92,7 +92,7 @@ const Contact = () => {
             onMouseLeave={() => setSmile(false)}
             type="submit"
             value="Send"
-            className="text-black group md:text-lg border-4 bg-orange-400 px-3 py-2 md:px-3 md:py-4 border-orange-900 my-2 flex items-center justify-center hover:text-white hover:bg-blue-400 hover:font-bold hover:border-blue-900 duration-300 hover:scale-110 rounded-lg shadow-orange-600 shadow-lg hover:shadow-lg hover:shadow-blue-500"
+            className="text-black group md:text-lg border-4 bg-orange-400 px-3 py-2 md:px-3 md:py-4 border-orange-400 my-2 flex items-center justify-center hover:text-white hover:bg-blue-400 hover:font-bold hover:border-blue-900 duration-300 hover:scale-110 rounded-lg shadow-orange-600 shadow-lg hover:shadow-lg hover:shadow-blue-500"
           >
             Let's Collaborate
             <span className="duration-300">
