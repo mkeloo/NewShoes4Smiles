@@ -181,11 +181,11 @@ const Navbar = () => {
           return (
             <Link
               to={url}
-              smooth={true}
-              duration={1100}
-              spy={true}
-              exact="true"
-              offset={-80}
+              // // smooth={true}
+              // duration={1100}
+              // spy={true}
+              // exact="true"
+              // offset={-80}
             >
               <li
                 key={id}
@@ -199,11 +199,11 @@ const Navbar = () => {
       </ul>
       <Link
         to={'donate'}
-        smooth={true}
-        duration={500}
-        spy={true}
-        exact="true"
-        offset={-90}
+        // // smooth={true}
+        // duration={500}
+        // spy={true}
+        // // exact="true"
+        // offset={-90}
       >
         <button className="p-3 px-7 mx-5 bg-lime-600 font-bold rounded-lg text-blue-900  shadow-md hover:shadow-cyan-500 hover:bg-blue-600 hover:shadow-lg hover:scale-110 hover:text-white duration-300">
           Donate

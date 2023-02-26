@@ -30,11 +30,6 @@ const images = [
 const ShoeDrive = () => {
   return (
     <div
-      // translateX={['215px', '-235px']}
-      // translateY={['-100px', '100px']}
-      data-aos="fade-down"
-      data-aos-duration="600"
-      data-aos-delay="300"
       id="shoedrive"
       className="w-[100vw] h-[100vh] flex justify-center items-center bg-[#607EAA] "
     >
