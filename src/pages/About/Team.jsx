@@ -76,7 +76,11 @@ const Team = () => {
         <div className="grid grid-cols-3 gap-4 w-full">
           {images.map(({ id, src, alt, position }) => (
             <div key={id} className="flex flex-col items-center m-2 py-5">
-              <img src={src} alt={alt} className="h-50 w-50 rounded-3xl" />
+              <img
+                src={src}
+                alt={alt}
+                className="h-50 w-50 rounded-3xl hover:shadow-blue-500 hover:shadow-lg hover:scale-105 duration-300"
+              />
               <div className="text-center">
                 <p className="text-2xl font-bold text-[#060229] pt-4">{alt}</p>
                 <p className="text-xl font-bold  text-[#211e76]">{position}</p>
