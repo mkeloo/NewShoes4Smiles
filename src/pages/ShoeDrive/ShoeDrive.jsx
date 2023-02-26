@@ -1,8 +1,8 @@
 import React from 'react';
 import ShoedrivePic from '../../assets/shoeDrive.JPG';
-import Shoe1 from '../../assets/shoeDr1.jpg';
-import Shoe2 from '../../assets/shoeDr2.jpg';
-import Shoe3 from '../../assets/shoeDr3.jpg';
+// import Shoe1 from '../../assets/shoeDr1.jpg';
+// import Shoe2 from '../../assets/shoeDr2.jpg';
+// import Shoe3 from '../../assets/shoeDr3.jpg';
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';

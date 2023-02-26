@@ -1,41 +1,41 @@
 import React from 'react';
 import Join from '../../assets/join.jpg';
-import { HiUserGroup } from 'react-icons/hi';
-import { FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
+// import { HiUserGroup } from 'react-icons/hi';
+// import { FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 
 const JoinUs = () => {
-  const socials = [
-    {
-      id: 1,
-      url: 'https://www.instagram.com/ufshoes4smiles/?hl=en',
-      icon: <FaInstagram size={30} />,
-      text: 'Instagram',
-    },
-    {
-      id: 3,
-      url: 'https://www.tiktok.com/@shoes4smiles',
-      icon: <FaTiktok size={30} />,
-      text: 'TikTok',
-    },
-    {
-      id: 4,
-      url: 'https://www.youtube.com/@Shoes4Smiles',
-      icon: <FaYoutube size={30} />,
-      text: 'YouTube',
-    },
-    // {
-    //   id: 5,
-    //   url: 'mailto:ufshoes4smiles@gmail.com',
-    //   icon: <HiOutlineMail size={30} />,
-    //   text: 'Email',
-    // },
-    {
-      id: 6,
-      url: 'https://web.groupme.com/join_group/89159667/TU2zA1rK',
-      icon: <HiUserGroup size={30} />,
-      text: 'GroupMe',
-    },
-  ];
+  // const socials = [
+  //   {
+  //     id: 1,
+  //     url: 'https://www.instagram.com/ufshoes4smiles/?hl=en',
+  //     icon: <FaInstagram size={30} />,
+  //     text: 'Instagram',
+  //   },
+  //   {
+  //     id: 3,
+  //     url: 'https://www.tiktok.com/@shoes4smiles',
+  //     icon: <FaTiktok size={30} />,
+  //     text: 'TikTok',
+  //   },
+  //   {
+  //     id: 4,
+  //     url: 'https://www.youtube.com/@Shoes4Smiles',
+  //     icon: <FaYoutube size={30} />,
+  //     text: 'YouTube',
+  //   },
+  //   // {
+  //   //   id: 5,
+  //   //   url: 'mailto:ufshoes4smiles@gmail.com',
+  //   //   icon: <HiOutlineMail size={30} />,
+  //   //   text: 'Email',
+  //   // },
+  //   {
+  //     id: 6,
+  //     url: 'https://web.groupme.com/join_group/89159667/TU2zA1rK',
+  //     icon: <HiUserGroup size={30} />,
+  //     text: 'GroupMe',
+  //   },
+  // ];
   return (
     <div
       id="join"

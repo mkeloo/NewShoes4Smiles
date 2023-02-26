@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Donate from '../pages/Donate';
+// import Donate from '../pages/Donate';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
+// import { HiOutlineMail, HiUserGroup } from 'react-icons/hi';
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
 import { Link } from 'react-router-dom';
