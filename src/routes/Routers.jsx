@@ -8,19 +8,20 @@ import EventsMain from '../pages/Events/EventsMain';
 import GetInvolved from '../pages/GetInvolved/GetInvolved';
 import WhatWeDo from '../pages/ShoeDrive/WhatWeDo';
 import Donate from '../pages/Donate';
+import Page404 from '../pages/Page404';
 
 function Routers() {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/home" />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Navigate to="/" />} />
       <Route path="/about" element={<AboutMain />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/events" element={<EventsMain />} />
       <Route path="/get-involved" element={<GetInvolved />} />
       <Route path="/what-we-do" element={<WhatWeDo />} />
       <Route path="/donate" element={<Donate />} />
-      <Route path="*" element={<Navigate to="/home" />} />
+      <Route path="*" element={<Page404 />} />
     </Routes>
   );
 }
