@@ -19,6 +19,7 @@ const Page404 = () => {
 
             <p class="font-extrabold text-8xl my-32 p-6 text-white animate-bounce hover:scale-110 hover:bg-black  rounded-3xl duration-300">
               404
+              {/* this is a test */}
             </p>
             <div class="flex flex-col items-center">
               <Link to="/">
