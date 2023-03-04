@@ -12,56 +12,50 @@ const socials = [
   {
     id: 1,
     url: 'https://www.instagram.com/ufshoes4smiles/?hl=en',
-    icon: <FaInstagram size={100} />,
+    icon: <FaInstagram size={80} />,
     text: 'Instagram',
-    color: 'blue',
   },
   {
     id: 2,
     url: 'https://www.facebook.com/ufshoes4smiles',
-    icon: <FaFacebook size={100} />,
+    icon: <FaFacebook size={80} />,
     text: 'Facebook',
-    color: 'blue',
   },
   {
     id: 3,
     url: 'https://www.tiktok.com/@shoes4smiles',
-    icon: <FaTiktok size={100} />,
+    icon: <FaTiktok size={80} />,
     text: 'TikTok',
-    color: 'blue',
   },
   {
     id: 4,
     url: 'https://www.youtube.com/@Shoes4Smiles',
-    icon: <FaYoutube size={100} />,
+    icon: <FaYoutube size={80} />,
     text: 'YouTube',
-    color: 'blue',
   },
   {
     id: 5,
     url: 'https://web.groupme.com/join_group/89159667/TU2zA1rK',
-    icon: <HiUserGroup size={100} />,
+    icon: <HiUserGroup size={80} />,
     text: 'GroupMe',
-    color: 'blue',
   },
   {
     id: 5,
     url: 'mailto:ufshoes4smiles@gmail.com',
-    icon: <HiOutlineMail size={100} />,
+    icon: <HiOutlineMail size={80} />,
     text: 'Email',
-    color: 'blue',
   },
 ];
 
 const Socials = () => {
   return (
-    <section className="w-[100vw] h-[100vh] bg-[#89CFF0] flex justify-center items-center  -z-10">
-      <div className="flex flex-col justify-center px-10">
+    <section className="w-[100vw] lg:h-[100vh] h-full bg-[#89CFF0] flex justify-center items-center py-14 pt-14 -z-10">
+      <div className="flex flex-col justify-center px-10 lg:pt-20 pt-0">
         <h1 className="lg:text-6xl md:text-4xl text-[#060229] text-3xl font-bold ">
           Connect With Us on our Socials!
         </h1>
         <ul className="">
-          <li className="grid grid-cols-2 gap-10 m-10 ">
+          <li className="grid grid-cols-2 gap-20 m-10  ">
             {socials.map(({ id, url, icon, text, color }) => (
               <a
                 key={id}
@@ -74,10 +68,10 @@ const Socials = () => {
                   href={url}
                   target="_blank"
                   rel="noreferrer"
-                  className={`text-${color}-700 `}
+                  className=" text-blue-700 text-2xl flex flex-col items-center "
                 >
                   {icon}
-                  <p className="text-2xl font-bold text-[#060229] pt-4 flex justify-center items-center">
+                  <p className="md:text-2xl text-xl font-bold text-[#060229] pt-4 flex justify-center items-center">
                     {text}
                   </p>
                 </a>

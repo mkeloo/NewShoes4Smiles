@@ -23,12 +23,12 @@ const JoinUs = () => {
   //     icon: <FaYoutube size={30} />,
   //     text: 'YouTube',
   //   },
-  //   // {
-  //   //   id: 5,
-  //   //   url: 'mailto:ufshoes4smiles@gmail.com',
-  //   //   icon: <HiOutlineMail size={30} />,
-  //   //   text: 'Email',
-  //   // },
+  // {
+  //   id: 5,
+  //   url: 'mailto:ufshoes4smiles@gmail.com',
+  //   icon: <HiOutlineMail size={30} />,
+  //   text: 'Email',
+  // },
   //   {
   //     id: 6,
   //     url: 'https://web.groupme.com/join_group/89159667/TU2zA1rK',
@@ -39,14 +39,14 @@ const JoinUs = () => {
   return (
     <div
       id="join"
-      className="w-[100vw] h-[100vh] bg-[#060229] flex justify-center items-center "
+      className="w-[100vw] h-[100vh] bg-[#060229] flex justify-center items-center mt-20"
     >
-      <div className=" w-full md:flex md:grid-cols-2 md:p-8 mb-8 md:mx-16 m-0 grid-col-reverse  rounded-2xl mx-4 p-2">
-        <div className="flex flex-col justify-center px-10 md:max-w-[65%] max-w-full pt-10 mt-5">
-          <h1 className="lg:text-6xl md:text-4xl text-[#EAE3D2] text-3xl font-bold py-6 pb-4">
+      <div className=" w-full md:flex md:grid-cols-2 md:p-8 mb-8 md:mx-16 m-0 grid-col-reverse  mx-2 p-2">
+        <div className="flex flex-col justify-center px-4 md:max-w-[65%] max-w-full pt-8 mt-3">
+          <h1 className="lg:text-6xl md:text-4xl text-[#EAE3D2] text-3xl font-bold py-3 pb-4">
             Join Us
           </h1>
-          <p className="md:py-3 py-1 font-bold text-[#EAE3D2] md:text-3xl text-xl">
+          <p className="md:py-3 py-1 font-bold text-[#EAE3D2] md:text-2xl lg:text-3xl text-xl">
             Looking to get involved?
           </p>
           <p className="text-sm md:text-lg text-[#EAE3D2] lg:text-2xl">
@@ -73,11 +73,11 @@ const JoinUs = () => {
             </ul>
           </div> */}
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center py-4">
           <img
             src={Join}
             alt="about1"
-            className="lg:w-[450px] lg:h-[500px] md:w-[260px] md:h-[310px] w-[175px] h-[210px] md:mt-8  m-5 object-cover rounded-2xl shadow-lg shadow-black"
+            className="lg:w-[690px] lg:h-[550px] md:w-[345px] md:h-[312px] w-[230px] h-[220px] md:mt-8  m-5 object-cover rounded-2xl shadow-lg shadow-black"
           />
         </div>
       </div>

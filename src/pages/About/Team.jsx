@@ -70,10 +70,10 @@ const Team = () => {
   return (
     <section className="w-full h-full bg-[#89CFF0] flex justify-center items-center">
       <div className="w-full max-w-screen-xl md:p-8 md:mx-16 m-10 grid-col-reverse rounded-2xl mx-4 p-2">
-        <h1 className="lg:text-6xl md:text-4xl text-[#060229] items-center flex justify-center  text-3xl font-bold pb-10">
+        <h1 className="lg:text-6xl text-4xl text-[#060229] items-center flex justify-center font-bold pb-10">
           Meet the Team
         </h1>
-        <div className="grid grid-cols-3 gap-4 w-full">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-full">
           {images.map(({ id, src, alt, position }) => (
             <div key={id} className="flex flex-col items-center m-2 py-5">
               <img
