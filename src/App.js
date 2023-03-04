@@ -10,7 +10,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 50700);
+    }, 1700);
   }, []);
   return (
     <div className="bg-[#060229] overflow-hidden	">

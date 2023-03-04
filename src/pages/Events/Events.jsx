@@ -57,7 +57,7 @@ const Events = () => {
       title: '5th GBM',
       date: 'March 6th, 2023 (Monday)',
       time: '6:30 PM',
-      location: 'Little Hall, Room Lit 0217',
+      location: 'Room Lit 0217',
       description: '5th General Body Meeting',
     },
     {
@@ -90,20 +90,19 @@ const Events = () => {
   return (
     <div
       id="calendar"
-      className="w-[100vw] h-full grid grid-row-2 py-14 justify-center items-center bg-[#89CFF0]"
+      className="w-[100vw] h-full grid grid-row-2 py-8 justify-center items-center bg-[#89CFF0]"
     >
-      <div className=" rounded-2xl md:mx-0 md:p-0 mx-4 p-2">
-        <h1 className="lg:text-6xl md:text-4xl text-[#060229]  text-3xl p-6 m-6  font-bold py-4 pb-4 flex justify-center">
+      <div className=" md:mx-0 md:p-0 mx-4 ">
+        <h1 className="lg:text-6xl text-5xl text-[#060229] p-6 m-6 font-bold py-4 pb-4 flex justify-center">
           Upcoming Events
         </h1>
 
-        {/* <div className="flex lg:hidden md:hidden"> */}
-        <div className=" p-6 m-6">
+        <div className="p-3 m-2 lg:p-6 lg:m-6">
           <div>
-            <ul className="grid grid-cols-2 gap-10">
+            <ul className="grid  grid-cols-1 lg:grid-cols-2 gap-10 ">
               {events.map((event) => (
-                <li key={event.id} className="p-2 text-[#060229] text-2xl mb-5">
-                  <h1 className="text-3xl font-bold py-3 px-4 bg-[#060229] text-[#EAE3D2] rounded-2xl mb-2">
+                <li key={event.id} className="p-2 text-[#060229] text-xl mb-5 ">
+                  <h1 className="text-3xl font-bold py-3 px-4 bg-[#060229] text-[#EAE3D2] rounded-2xl mb-2 flex justify-center items-center">
                     {event.title}
                   </h1>
                   <p>
