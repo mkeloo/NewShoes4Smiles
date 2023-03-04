@@ -126,6 +126,43 @@ const Events = () => {
         </div>
       </div>
     </div>
+
+    // <div
+    //   id="calendar"
+    //   className="w-[100vw] h-full grid grid-cols-1 md:grid-cols-2 py-10 md:py-14 justify-center items-center bg-[#89CFF0]"
+    // >
+    //   <div className="md:mx-0 mx-4 p-4 md:p-2">
+    //     <h1 className="text-3xl md:text-6xl text-[#060229] text-center md:text-left px-6 md:px-0 m-4 md:m-6 font-bold ">
+    //       Upcoming Events
+    //     </h1>
+    //   </div>
+    //   <div className="p-4 md:p-6 m-4 md:m-6">
+    //     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+    //       {events.map((event) => (
+    //         <div key={event.id} className="p-4 md:p-2 text-[#060229]">
+    //           <h2 className="text-lg md:text-2xl font-bold py-2 md:py-3 px-4 bg-[#060229] text-[#EAE3D2] rounded-2xl mb-2">
+    //             {event.title}
+    //           </h2>
+    //           <p className="text-base md:text-lg">
+    //             <span className="font-bold text-sm md:text-base">Date: </span>
+    //             {event.date}
+    //           </p>
+    //           <p className="text-base md:text-lg">
+    //             <span className="font-bold text-sm md:text-base">Time: </span>
+    //             {event.time}
+    //           </p>
+    //           <p className="text-base md:text-lg">
+    //             <span className="font-bold text-sm md:text-base">
+    //               Location:{' '}
+    //             </span>
+    //             {event.location}
+    //           </p>
+    //           <p className="text-base md:text-lg">{event.description}</p>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 

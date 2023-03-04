@@ -10,23 +10,25 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1700);
+    }, 50700);
   }, []);
   return (
     <div className="bg-[#060229] overflow-hidden	">
       {loading ? (
-        <div className="grid  justify-center bg-[#0d013b] items-center w-[100vw] h-[100vh]">
-          <div className="h-[40%]" />
-          <img src={image} alt="" className="w-[500px] h-[300px]" />
+        <div className=" w-full h-screen overflow-x-hidden overflow-y-hidden flex flex-col justify-center bg-[#0d013b] items-center ">
+          <img
+            src={image}
+            alt=""
+            className="lg:w-[550px] lg:h-[400px] w-[300px] h-[218px] md:w-[400px] md:h-[290px]"
+          />
           <BarLoader
             color="#36d7b7"
             loading={loading}
             height={20}
-            width={500}
+            width={289}
             aria-label="Loading Spinner"
             data-testid="loader"
           />
-          <div className="h-[50%]" />
         </div>
       ) : (
         <Layout />
