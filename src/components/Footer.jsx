@@ -75,19 +75,19 @@ const Footer = () => {
           />
         </div>
         <div className="flex justify-center">
-          <div className="flex justify-between w-full md:w-[400px] my-6 mr-2">
+          <div className="md:flex md:justify-between grid grid-cols-2 items-center justify-center w-full md:w-[400px] my-6 mr-2">
             {socials.map((social) => {
               const { id, url, icon, text } = social;
               return (
                 <a
                   key={id}
                   href={url}
-                  className="duration-300 text-white hover:scale-110 hover:text-orange-400 flex flex-col items-center"
+                  className="duration-300 text-white hover:scale-110 hover:text-orange-400 flex flex-col items-center p-2"
                   target="_blank"
                   rel="noreferrer"
                 >
                   {icon}
-                  <span className="text-sm">{text}</span>
+                  <span className="text-sm p-1">{text}</span>
                 </a>
               );
             })}
