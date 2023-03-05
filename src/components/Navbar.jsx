@@ -137,6 +137,11 @@ const Navbar = () => {
       title: 'Donate',
       url: 'donate',
     },
+    {
+      id: 8,
+      title: '404',
+      url: '404',
+    },
   ];
   // return (
   //   <nav>
