@@ -50,12 +50,13 @@ const socials = [
 const Socials = () => {
   return (
     <section className="w-[100vw] lg:h-[100vh] h-full bg-[#89CFF0] flex justify-center items-center py-14 pt-14 -z-10">
-      <div className="flex flex-col justify-center px-10 lg:pt-20 pt-0">
-        <h1 className="lg:text-6xl md:text-4xl text-[#060229] text-3xl font-bold ">
-          Connect With Us on our Socials!
+      <div className="flex flex-col justify-center px-10 lg:pt-10 pt-0">
+        <h1 className="lg:text-6xl md:text-4xl text-[#060229] text-3xl font-bold md:mb-10 mb-0">
+          Connect With Us on our{' '}
+          <span className="lg:text-6xl md:text-4xl text-4xl">Socials!</span>
         </h1>
         <ul className="">
-          <li className="grid grid-cols-2 gap-20 m-10  ">
+          <li className="grid md:grid-cols-3 grid-cols-2 gap-20 m-10  ">
             {socials.map(({ id, url, icon, text, color }) => (
               <a
                 key={id}
@@ -68,7 +69,7 @@ const Socials = () => {
                   href={url}
                   target="_blank"
                   rel="noreferrer"
-                  className=" text-blue-700 text-2xl flex flex-col items-center "
+                  className=" text-blue-500 text-2xl flex flex-col items-center hover:scale-110 hover:text-blue-800 duration-300 "
                 >
                   {icon}
                   <p className="md:text-2xl text-xl font-bold text-[#060229] pt-4 flex justify-center items-center">

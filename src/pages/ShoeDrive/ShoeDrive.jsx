@@ -31,7 +31,7 @@ const ShoeDrive = () => {
   return (
     <div
       id="shoedrive"
-      className="w-[100vw] h-[100vh] flex justify-center items-center my-20 bg-[#060229]"
+      className="w-[100vw] h-full flex justify-center items-center md:my-20 mt-16 bg-[#060229]"
     >
       {/* Different card: bg-[#607EAA] rounded-3xl shadow-xl shadow-orange-200  */}
       <div className="  w-full md:flex md:grid-cols-2 md:p-8 md:mx-16 m-10 grid-col-reverse rounded-2xl mx-4 p-2">
@@ -64,13 +64,13 @@ const ShoeDrive = () => {
           <img
             src={ShoedrivePic}
             alt="about1"
-            className="lg:w-[600px] lg:h-[580px] lg:flex hidden  md:mt-8 m-5 object-cover  shadow-black"
+            className="lg:w-[600px] lg:h-[580px] flex  md:mt-8 m-5 object-cover rounded-2xl shadow-orange-600 shadow-md md:shadow-black"
           />
         </div>
 
         {/* Content */}
-        <div className="flex flex-col justify-center px-10 md:max-w-[55%] max-w-full mb-5">
-          <h1 className="lg:text-6xl  md:text-4xl text-[#EAE3D2] text-3xl font-bold py-6 pb-4">
+        <div className="flex flex-col justify-center md:px-10 px-6 md:max-w-[55%] max-w-full mb-5">
+          <h1 className="lg:text-6xl  md:text-4xl text-[#EAE3D2] text-3xl font-bold py-6 pb-4 ">
             Shoe Drive
           </h1>
           <p className=" text-sm md:text-lg lg:text-2xl text-[#F9F5EB]">

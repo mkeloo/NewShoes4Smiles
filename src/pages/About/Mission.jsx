@@ -23,7 +23,7 @@ const Mission = () => {
           <img
             src={about1}
             alt="about1"
-            className="lg:w-[450px] z-10 lg:h-[500px] md:w-[260px] md:h-[310px] w-[200px] h-[240px] md:mt-8 m-5 object-cover rounded-2xl shadow-lg shadow-black"
+            className="lg:w-[450px] z-10 lg:h-[500px] md:w-[260px] md:h-[310px] w-[200px] h-[240px] md:mt-8 m-5 object-cover rounded-2xl shadow-lg shadow-black hover:scale-110 duration-300"
           />
         </div>
       </div>

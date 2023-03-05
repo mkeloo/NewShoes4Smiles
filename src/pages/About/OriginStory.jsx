@@ -10,13 +10,13 @@ const OriginStory = () => {
           <img
             src={FounderPic}
             alt="founder"
-            className="lg:w-[550px] lg:h-[680px] lg:flex   md:mt-8 m-5 rounded-2xl shadow-lg shadow-orange-500"
+            className="lg:w-[550px] lg:h-[680px] flex   md:mt-8 m-5 rounded-2xl shadow-lg shadow-orange-500 hover:scale-110 duration-300"
           />
         </div>
 
-        {/* Content */}
-        <div className="flex flex-col justify-center md:px-10 px-6f md:max-w-[55%] max-w-full mb-5">
-          <h1 className="lg:text-6xl  md:text-4xl text-[#EAE3D2] text-3xl font-bold py-6 pb-8 flex justify-center items-center">
+        {/* Content: lg:text-6xl  md:text-4xl text-3xl */}
+        <div className="flex flex-col justify-center md:px-10 px-6 md:max-w-[55%] max-w-full mb-5">
+          <h1 className=" lg:text-6xl md:text-4xl text-3xl text-[#EAE3D2]  font-bold py-6 pb-8 flex justify-center items-center">
             Origin Story
           </h1>
           <p className=" text-sm md:text-lg lg:text-xl text-[#F9F5EB] ">
