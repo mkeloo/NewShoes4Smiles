@@ -4,16 +4,22 @@ import AboutUsPic from './AboutUsPic';
 import Mission from './Mission';
 import OriginStory from './OriginStory';
 import Team from './Team';
+import { motion } from 'framer-motion';
 
 const AboutMain = () => {
   return (
-    <section>
+    <motion.section
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth }}
+      transition={{ duration: 0.4 }}
+    >
       <AboutUsPic />
       {/* <About /> */}
       <Mission />
       <OriginStory />
       <Team />
-    </section>
+    </motion.section>
   );
 };
 

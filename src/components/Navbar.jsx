@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
 import { Link } from 'react-router-dom';
+// import DropdownMenu from './DropdownMenu';
 
 const Navbar = () => {
   // Navbar State
@@ -185,13 +186,14 @@ const Navbar = () => {
         />
       </Link>
 
+      {/* Large Screen Menu */}
       {/* <img src={logo} alt="/" className="object-fit w-[120px] h-[120px]" /> */}
       <ul className="hidden md:flex">
         {links.map(({ id, url, title }) => {
           return (
             <Link
               to={url}
-              // // smooth={true}
+              // smooth={true}
               // duration={1100}
               // spy={true}
               // exact="true"
@@ -202,6 +204,7 @@ const Navbar = () => {
                 className="p-4 hover:text-orange-400 lg:text-[18px]  md:text-sm font-bold duration-300 link link-underline link-underline-black"
               >
                 {title}
+                {/* <DropdownMenu /> */}
               </li>
             </Link>
           );
@@ -209,10 +212,10 @@ const Navbar = () => {
       </ul>
       <Link
         to={'donate'}
-        // // smooth={true}
+        // smooth={true}
         // duration={500}
         // spy={true}
-        // // exact="true"
+        // exact="true"
         // offset={-90}
       >
         <button className="p-3 hidden md:flex px-7 mx-5 bg-lime-600 font-bold rounded-lg text-blue-900  shadow-md hover:shadow-cyan-500 hover:bg-blue-600 hover:shadow-lg hover:scale-110 hover:text-white duration-300">
@@ -220,6 +223,7 @@ const Navbar = () => {
         </button>
       </Link>
 
+      {/* ********************************* Mobile Screen ********************************* */}
       {/* Hamburger Menu */}
       <div
         onClick={() => setIsMenuOpen(true)}

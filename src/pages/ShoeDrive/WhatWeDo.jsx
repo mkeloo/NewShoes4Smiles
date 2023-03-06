@@ -2,14 +2,20 @@ import React from 'react';
 import ShoeDrivePic from './ShoeDrivePic';
 import ShoeDrive from './ShoeDrive';
 import Procedure from './Procedure';
+import { motion } from 'framer-motion';
 
 const WhatWeDo = () => {
   return (
-    <section>
+    <motion.section
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth }}
+      transition={{ duration: 0.4 }}
+    >
       <ShoeDrivePic />
       <ShoeDrive />
       <Procedure />
-    </section>
+    </motion.section>
   );
 };
 

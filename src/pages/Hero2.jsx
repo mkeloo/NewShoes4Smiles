@@ -9,7 +9,7 @@ import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-
+import { motion } from 'framer-motion';
 const images = [
   {
     id: 1,
@@ -30,7 +30,13 @@ const images = [
 
 const Hero2 = () => {
   return (
-    <section className="w-[100vw] md:h-[100vh] h-full bg-[#060229] px-24 md:pt-[60px] pt-[50px] flex flex-col md:flex-row items-center md:justify-center -z-10">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-[100vw] md:h-[100vh] h-full bg-[#060229] px-24 md:pt-[60px] pt-[50px] flex flex-col md:flex-row items-center md:justify-center -z-10"
+    >
       <div className="absolute md:hidden block -z-1 w-[30%] h-[80%]  blue__gradient" />
       <div className="absolute md:hidden block -z-2 w-[60%] h-[60%]  pink__gradient" />
       <div className="md:w-1/2 p-8 z-10 mt-8 ">
@@ -93,7 +99,7 @@ const Hero2 = () => {
         <div className="absolute md:block hidden -z-1 w-[50%] h-[50%] right-100 bottom-20 blue__gradient" />
         <div className="absolute md:block hidden -z-2 w-[40%] h-[35%] top-0 right-50 pink__gradient" />
       </div>
-    </section>
+    </motion.section>
   );
 };
 
