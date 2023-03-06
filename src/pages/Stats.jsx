@@ -114,7 +114,7 @@ const Stats = () => {
       <h1 className="flex justify-center items-center text-3xl md:text-4xl lg:text-6xl text-[#060229] font-bold py-10">
         Our Accomplishments
       </h1>
-      <div className="w-full max-w-screen-xl mt-10 mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="w-full max-w-screen-xl mt-10 mx-auto flex justify-center items-center flex-cols-1 md:grid-cols-3 gap-10">
         {stats.map((stat) => (
           <div
             key={stat.id}
@@ -131,7 +131,7 @@ const Stats = () => {
                 <img
                   src={headset}
                   alt="headset"
-                  className="w-1/2 h-1/2 object-contain animate-pulse"
+                  className="w-1/2 h-1/2 object-contain"
                 />
               </div>
               <p className="font-normal text-4xl text-white uppercase">
