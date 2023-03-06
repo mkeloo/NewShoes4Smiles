@@ -110,9 +110,9 @@ const Stats = () => {
   ];
 
   return (
-    <section className="w-[100vw] h-[100vh] bg-[#89CFF0] py-10 my-10 -z-10 overflow-x-hidden">
+    <section className="w-[100vw] h-full bg-[#89CFF0] pt-14 my-20 pb-28 -z-10 overflow-x-hidden">
       <h1 className="flex justify-center items-center text-3xl md:text-4xl lg:text-6xl text-[#060229] font-bold py-10">
-        Stats
+        Our Accomplishments
       </h1>
       <div className="w-full max-w-screen-xl mt-10 mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {stats.map((stat) => (
