@@ -106,18 +106,36 @@
 }
 
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(107, 58, 255, 0) 0%, #5db1ff 100%);
+  background: linear-gradient(180deg, rgba(107, 58, 255, 0) 0%, #2701ff 100%);
+  filter: blur(123px);
+}
+
+.darkblue__gradient {
+  background: linear-gradient(120deg, rgba(1, 12, 82, 0) 20%, #0017e2 100%);
   filter: blur(123px);
 }
 
 .pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  background: linear-gradient(90deg, #ff59fc 0%, #ff0b4c 100%);
+  filter: blur(900px);
+}
+
+.violet__gradient {
+  background: linear-gradient(90deg, #fa84f8 0%, #ff06fb 100%);
   filter: blur(900px);
 }
 
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .bg-blue-gradient {

@@ -35,10 +35,12 @@ const Hero2 = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-[100vw] md:h-[100vh] h-full bg-[#060229] px-24 md:pt-[60px] pt-[50px] flex flex-col md:flex-row items-center md:justify-center -z-10"
+      className="w-[100vw] md:h-[100vh] h-full bg-[#060229] px-24 md:pt-[60px] pt-[50px] flex flex-col md:flex-row items-center md:justify-center -z-10 overflow-hidden"
     >
-      <div className="absolute md:hidden block -z-1 w-[30%] h-[80%]  blue__gradient" />
-      <div className="absolute md:hidden block -z-2 w-[60%] h-[60%]  pink__gradient" />
+      <div className="absolute md:hidden block -z-1 w-[80%] h-[50%]  darkblue__gradient" />
+      <div className="absolute md:hidden block -z-2 w-[60%] h-[60%]  violet__gradient" />
+      <div className="absolute md:hidden block -z-1 w-[60%] h-[40%]  pink__gradient" />
+
       <div className="md:w-1/2 p-8 z-10 mt-8 ">
         <h1 className=" text-4xl md:text-6xl font-bold    text-[#F9F5EB] mb-8">
           {/* Help Donate Shoes to People in Need */}
@@ -53,7 +55,7 @@ const Hero2 = () => {
           underserved communities.
         </p>
         <div className="flex flex-col md:flex-row ">
-          <button className="text-white font-poppins font-bold p-4 lg:px-3 px-8 lg:text-xl text-lg lg:mx-20 mx-8 group md:text-lg border-4 lg:py-4 py-2 flex items-center bg-violet-800 border-violet-900 hover:bg-orange-600 hover:font-bold hover:border-orange-900 duration-300 hover:scale-110 rounded-xl">
+          <button className="text-white font-poppins font-bold p-4 lg:px-3 px-8 lg:text-xl text-lg lg:mx-20 mx-8 group md:text-lg border-4 lg:py-4 py-2 flex items-center bg-[#0a00c1] border-[#00035d] hover:bg-orange-600 hover:font-bold hover:border-orange-900 duration-300 hover:scale-110 rounded-xl">
             Checkout our Events
             <span className="duration-300 group-hover:rotate-90">
               <HiArrowNarrowRight className="ml-2 lg:ml-3" size={30} />
@@ -96,8 +98,10 @@ const Hero2 = () => {
             );
           })}
         </Swiper>
-        <div className="absolute md:block hidden -z-1 w-[50%] h-[50%] right-100 bottom-20 blue__gradient" />
-        <div className="absolute md:block hidden -z-2 w-[40%] h-[35%] top-0 right-50 pink__gradient" />
+        <div className="absolute md:block hidden -z-2 w-[50%] h-[35%] top-0 right-50 violet__gradient" />
+        <div className="absolute md:block hidden -z-1 w-[50%] h-[50%] right-100 bottom-20 overflow-x-hidden blue__gradient" />
+        {/* <div className="absolute md:block hidden -z-1 w-[100%] h-[50%] right-100 bottom-20 violet__gradient" /> */}
+        {/* <div className="absolute md:block hidden -z-1 w-[100%] h-[50%] right-100 bottom-20 blue__gradient" /> */}
       </div>
     </motion.section>
   );
