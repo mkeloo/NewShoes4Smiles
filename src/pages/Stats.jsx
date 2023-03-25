@@ -88,23 +88,23 @@ const Stats = () => {
   const stats = [
     {
       id: 1,
-      title: 'Shoes Donated',
+      title: 'Donated',
       value: '1200',
-      unit: 'pairs',
+      unit: 'pairs of Shoes',
       image: pic1,
     },
     {
       id: 2,
-      title: 'Money Donated',
+      title: 'Donated',
       value: '$3300',
-      unit: 'units',
+      unit: '',
       image: pic2,
     },
     {
       id: 3,
-      title: 'Partnered Organizations',
+      title: 'Partnered with',
       value: '25+',
-      unit: 'units',
+      unit: 'Organizations',
       image: pic3,
     },
   ];
