@@ -88,22 +88,22 @@ const Stats = () => {
   const stats = [
     {
       id: 1,
-      title: 'Stat 1',
-      value: '100',
-      unit: 'units',
+      title: 'Shoes Donated',
+      value: '1200',
+      unit: 'pairs',
       image: pic1,
     },
     {
       id: 2,
-      title: 'Stat 2',
-      value: '200',
+      title: 'Money Donated',
+      value: '$3300',
       unit: 'units',
       image: pic2,
     },
     {
       id: 3,
-      title: 'Stat 3',
-      value: '300',
+      title: 'Partnered Organizations',
+      value: '25+',
       unit: 'units',
       image: pic3,
     },
@@ -131,7 +131,7 @@ const Stats = () => {
                 <img
                   src={headset}
                   alt="headset"
-                  className="w-1/2 h-1/2 object-contain"
+                  className="w-1/2 h-1/2 object-contai"
                 />
               </div>
               <p className="font-normal text-4xl text-white uppercase">
