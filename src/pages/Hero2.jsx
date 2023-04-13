@@ -1,32 +1,8 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 // import logo from '../assets/HomeLogo.png';
-import Shoe1 from '../assets/shoeDr1.jpg';
-import Shoe2 from '../assets/shoeDr2.jpg';
-import Shoe3 from '../assets/shoeDr3.jpg';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
+import FrontPagePic from '../assets/FrontPage.jpeg';
 import { motion } from 'framer-motion';
-const images = [
-  {
-    id: 1,
-    src: Shoe2,
-    alt: 'shoe2',
-  },
-  {
-    id: 2,
-    src: Shoe1,
-    alt: 'shoe1',
-  },
-  {
-    id: 3,
-    src: Shoe3,
-    alt: 'shoe3',
-  },
-];
 
 const Hero2 = () => {
   return (
@@ -35,11 +11,11 @@ const Hero2 = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-[100vw] md:h-[100vh] h-full bg-[#060229] px-24 md:pt-[60px] pt-[50px] flex flex-col md:flex-row items-center md:justify-center -z-10 overflow-hidden"
+      className="w-[100vw] md:h-[100vh] h-full bg-[#060229] pl-24 md:pt-[60px] pt-[50px] flex flex-col md:flex-row items-center md:justify-center -z-10 overflow-hidden"
     >
-      <div className="absolute md:hidden block -z-1 w-[80%] h-[50%]  darkblue__gradient" />
+      {/* <div className="absolute md:hidden block -z-1 w-[80%] h-[50%]  darkblue__gradient" />
       <div className="absolute md:hidden block -z-2 w-[60%] h-[60%]  violet__gradient" />
-      <div className="absolute md:hidden block -z-1 w-[60%] h-[40%]  pink__gradient" />
+      <div className="absolute md:hidden block -z-1 w-[60%] h-[40%]  pink__gradient" /> */}
 
       <div className="md:w-1/2 p-8 z-10 mt-8 ">
         <h1 className=" text-4xl md:text-6xl font-bold    text-[#F9F5EB] mb-8">
@@ -73,33 +49,15 @@ const Hero2 = () => {
         {/* <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" /> */}
       </div>
       <div className="md:w-1/2 h-auto overflow-hidden hidden md:flex ">
+        <img src={FrontPagePic} alt="shoe1" className="object-contain" />
         {/* <div className="absolute -z-2 w-[40%] h-[35%] top-0 right-50 pink__gradient" /> */}
         {/* <div className="absolute -z-2 w-[80%] h-[80%] left-100 rounded-full white__gradient" /> */}
 
-        <Swiper
-          modules={[Pagination, Autoplay]}
-          autoplay={{ delay: 3000 }}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          loop={true}
-          className=" object-contain md:w-[450px] md:h-[590px] mb-24 w-[200px] h-[310px] z-10"
-        >
-          {images.map(({ id, src, alt }) => {
-            return (
-              <SwiperSlide key={id} className="z-back">
-                <div className="z-back">
-                  <img
-                    src={src}
-                    alt={alt}
-                    className="object-cover md:mt-20 mt-10 h-full w-full rounded-3xl "
-                  />
-                </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-        <div className="absolute md:block hidden -z-2 w-[50%] h-[35%] top-0 right-50 violet__gradient" />
-        <div className="absolute md:block hidden -z-1 w-[50%] h-[50%] right-100 bottom-20 overflow-x-hidden blue__gradient" />
+        {/* Gradient */}
+        {/* <div className="absolute md:block hidden -z-2 w-[50%] h-[35%] top-0 right-50 violet__gradient" />
+        <div className="absolute md:block hidden -z-1 w-[50%] h-[50%] right-100 bottom-20 overflow-x-hidden blue__gradient" /> */}
+        {/* Home End */}
+
         {/* <div className="absolute md:block hidden -z-1 w-[100%] h-[50%] right-100 bottom-20 violet__gradient" /> */}
         {/* <div className="absolute md:block hidden -z-1 w-[100%] h-[50%] right-100 bottom-20 blue__gradient" /> */}
       </div>
