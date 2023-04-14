@@ -299,7 +299,7 @@ const Navbar = () => {
                 // hover:translate-x-2 hover:scale-105 hover:border-indigo-800 hover:border-2 hover:rounded-md hover:border-spacing-2 hover:underline
                 className="text-xl border-white text-black border-y-2 border-t-2  py-5 flex duration-300 hover:border-black hover:border-y-2 hover:border-t-2 ease-in-out"
               >
-                <a href={`/${url}`}>{title}</a>
+                <Link to={`/${url}`}>{title}</Link>
               </li>
             ))}
           </ul>
