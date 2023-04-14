@@ -268,7 +268,10 @@ const Navbar = () => {
 
       {/* Overlay */}
       {sidebar ? (
-        <div className="bg-black/80  fixed w-full h-screen z-10 top-0 left-0"></div>
+        <div
+          onClick={() => setSidebar(!sidebar)}
+          className="bg-black/80  fixed w-full h-screen z-10 top-0 left-0"
+        ></div>
       ) : (
         ' '
       )}
@@ -286,21 +289,23 @@ const Navbar = () => {
           size={30}
           className="cursor-pointer absolute right-4 top-4  mt-1"
         />
-        <h2 className="text-3xl p-4 ">
+        {/* <h2 className="text-3xl p-4 text-black ">
           <span className="font-serif font-semibold">BOGO </span>
           <span className="font-bold">Eats</span>
-        </h2>
+        </h2> */}
         <nav>
           <ul className="flex flex-col p-8 text-black">
             {/* Populating List for Sidebar */}
             {mobileLinks.map(({ id, title, url }) => (
-              <li
-                key={id}
-                // hover:translate-x-2 hover:scale-105 hover:border-indigo-800 hover:border-2 hover:rounded-md hover:border-spacing-2 hover:underline
-                className="text-xl border-white text-black border-y-2 border-t-2  py-5 flex duration-300 hover:border-black hover:border-y-2 hover:border-t-2 ease-in-out"
-              >
-                <Link to={`/${url}`}>{title}</Link>
-              </li>
+              <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>
+                <li
+                  key={id}
+                  // hover:translate-x-2 hover:scale-105 hover:border-indigo-800 hover:border-2 hover:rounded-md hover:border-spacing-2 hover:underline
+                  className="text-xl border-white text-black border-y-2 border-t-2  py-5 flex duration-300 hover:border-black hover:border-y-2 hover:border-t-2 ease-in-out"
+                >
+                  {title}
+                </li>
+              </Link>
             ))}
           </ul>
         </nav>

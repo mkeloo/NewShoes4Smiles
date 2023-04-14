@@ -42,9 +42,8 @@ const Contact = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.4 }}
-      // translateX={['160px', '-200px']}
       id="contact"
-      className="w-[100vw] h-[100vh] bg-[#89CFF0]  flex justify-center items-center p-2 -z-10  "
+      className="w-[100vw] h-full bg-[#89CFF0]  flex justify-center items-center p-2 -z-10  "
     >
       <div className="absolute -z-1 w-[50%] h-[50%] left-20 top-20 white__gradient" />
       <div className="absolute -z-2 w-[50%] h-[50%] left-20 top-20 blue__gradient" />
