@@ -2,6 +2,7 @@ import React from 'react';
 import ShoeDrivePic from './ShoeDrivePic';
 import ShoeDrive from './ShoeDrive';
 import Procedure from './Procedure';
+import Kicks from './Kicks';
 import { motion } from 'framer-motion';
 
 const WhatWeDo = () => {
@@ -14,6 +15,7 @@ const WhatWeDo = () => {
     >
       <ShoeDrivePic />
       <ShoeDrive />
+      <Kicks />
       <Procedure />
     </motion.section>
   );

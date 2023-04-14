@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from '../../assets/pic3.jpg';
+import pic from '../../assets/What_We_Do.jpg';
 
 const ShoeDrivePic = () => {
   return (
@@ -26,7 +26,7 @@ const ShoeDrivePic = () => {
           className=" object-cover h-screen w-[100vw] mt-36 "
         />
 
-        <div className="absolute text-white md:m-0 m-3  md:bottom-40 md:left-20 top-40 md:top-80 left-0 mt-20 md:mt-12 opacity-90 ">
+        <div className="absolute text-2xl md:text-7xl text-white bottom-40 right-20 opacity-90  ">
           <h1 className=" lg:px-10 lg:py-7 px-6 py-4  bg-black text-white lg:text-6xl text-4xl rounded-2xl mb-24 font-poppins">
             What We Do
           </h1>

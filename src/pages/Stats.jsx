@@ -32,11 +32,11 @@ const Stats = () => {
   ];
 
   return (
-    <section className="w-[100vw] h-full bg-[#89CFF0] pt-14 my-20 pb-28 -z-10 overflow-x-hidden">
-      <h1 className="flex justify-center items-center text-3xl md:text-4xl lg:text-6xl text-[#060229] font-bold py-10">
-        Our Accomplishments
+    <section className="w-[100vw] h-full bg-[#89CFF0] pt-10 my-20 pb-28 -z-10 overflow-x-hidden">
+      <h1 className="flex justify-center items-center text-5xl lg:text-6xl text-[#060229] font-bold py-4">
+        Achievements
       </h1>
-      <div className="w-full max-w-screen-xl mt-10 mx-auto flex justify-center items-center flex-cols-1 md:grid-cols-3 gap-10">
+      <div className="w-full max-w-screen-xl mt-10 md:mx-auto md:flex grid justify-center items-center  gap-10 ">
         {stats.map((stat) => (
           <div
             key={stat.id}
@@ -45,8 +45,7 @@ const Stats = () => {
             <img
               src={stat.image}
               alt={stat.title}
-              className="w-full h-full object-cover object-center transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl m-5  rounded-3xl "
-              // style={{ margin: '10px', padding: '10px' }}
+              className="w-full h-full object-cover object-center transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl m-5 rounded-3xl  "
             />
             <div className="absolute bottom-0 p-6 justify-start w-full flex-col bg-black bg-opacity-50 rounded-b-3xl ">
               {/* <div className="flex justify-center items-center w-16 h-16 rounded-lg glassmorphism mb-6">
@@ -59,7 +58,7 @@ const Stats = () => {
               <p className="font-normal text-4xl text-white uppercase">
                 {stat.title}
               </p>
-              <h2 className="mt-2 font-semibold text-xl md:text-5xl text-white ">{`${stat.value} ${stat.unit}`}</h2>
+              <h2 className="mt-2 font-semibold text-5xl md:text-5xl text-white ">{`${stat.value} ${stat.unit}`}</h2>
             </div>
           </div>
         ))}

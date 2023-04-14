@@ -25,7 +25,7 @@ const images = [
   {
     id: 3,
     src: Shamir,
-    alt: 'Shamir Menon',
+    alt: 'Shahmir Memon',
     position: 'External Vice President',
   },
   {

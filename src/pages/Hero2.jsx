@@ -38,14 +38,14 @@ const Hero2 = () => {
             </span>
           </button>
         </div>
-        <div className=" my-6 flex items-center p-3 group">
+        {/* <div className=" my-6 flex items-center p-3 group">
           <div className="text-5xl font-bold text-orange-500 mr-4 hover:scale-110 duration-300">
             1200+
           </div>
           <div className="text-xl text-[#F9F5EB] font-poppins font-bold">
             pairs of shoes donated
           </div>
-        </div>
+        </div> */}
         {/* <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" /> */}
       </div>
       <div className="md:w-1/2 h-auto overflow-hidden hidden md:flex ">
