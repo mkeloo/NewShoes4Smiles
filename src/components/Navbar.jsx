@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   // Navbar State
-  const [nav] = useState(true);
   const [sidebar, setSidebar] = useState(false);
 
   // navbar hide
@@ -189,7 +188,7 @@ const Navbar = () => {
 
       {/* Large Screen Menu */}
       {/* <img src={logo} alt="/" className="object-fit w-[120px] h-[120px]" /> */}
-      <ul className="hidden md:flex">
+      <ul className="hidden lg:flex">
         {links.map(({ id, url, title }) => {
           return (
             <Link
@@ -212,7 +211,7 @@ const Navbar = () => {
         })}
       </ul>
       <Link to={'donate'}>
-        <button className="p-3 hidden md:flex px-7 mx-5 bg-lime-600 font-bold rounded-lg text-blue-900  shadow-md hover:shadow-cyan-500 hover:bg-blue-600 hover:shadow-lg hover:scale-110 hover:text-white duration-300">
+        <button className="p-3 hidden lg:flex px-7 mx-5 bg-lime-600 font-bold rounded-lg text-blue-900  shadow-md hover:shadow-cyan-500 hover:bg-blue-600 hover:shadow-lg hover:scale-110 hover:text-white duration-300">
           Donate
         </button>
       </Link>
@@ -248,12 +247,20 @@ const Navbar = () => {
       {/* Hamburger Menu */}
       <div
         onClick={() => setIsMenuOpen(true)}
-        className="md:hidden z-[100] text-orange-800 cursor-pointer"
+        className="flex lg:hidden z-[100] text-orange-800 cursor-pointer"
       >
-        {isMenuOpen && nav ? (
-          <AiOutlineClose size={30} />
+        {sidebar ? (
+          <AiOutlineClose
+            onClick={() => setSidebar(!sidebar)}
+            size={30}
+            className="cursor-pointer absolute right-4 top-4  mt-1"
+          />
         ) : (
-          <AiOutlineMenu size={30} />
+          <AiOutlineMenu
+            onClick={() => setSidebar(!sidebar)}
+            size={30}
+            className="cursor-pointer absolute right-4 top-4  mt-1"
+          />
         )}
       </div>
 
@@ -274,7 +281,7 @@ const Navbar = () => {
             : 'bg-white fixed w-[300px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
         }
       >
-        <AiOutlineClose
+        <AiOutlineMenu
           onClick={() => setSidebar(!sidebar)}
           size={30}
           className="cursor-pointer absolute right-4 top-4  mt-1"
@@ -286,13 +293,13 @@ const Navbar = () => {
         <nav>
           <ul className="flex flex-col p-8 text-black">
             {/* Populating List for Sidebar */}
-            {mobileLinks.map(({ id, name, icon }) => (
+            {mobileLinks.map(({ id, title, url }) => (
               <li
                 key={id}
                 // hover:translate-x-2 hover:scale-105 hover:border-indigo-800 hover:border-2 hover:rounded-md hover:border-spacing-2 hover:underline
-                className="text-xl border-white border-y-2 border-t-2  py-5 flex duration-300 hover:border-black hover:border-y-2 hover:border-t-2 ease-in-out"
+                className="text-xl border-white text-black border-y-2 border-t-2  py-5 flex duration-300 hover:border-black hover:border-y-2 hover:border-t-2 ease-in-out"
               >
-                {icon} {name}
+                <a href={`/${url}`}>{title}</a>
               </li>
             ))}
           </ul>

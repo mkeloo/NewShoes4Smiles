@@ -37,6 +37,7 @@ const Hero2 = () => {
               <HiArrowNarrowRight className="ml-2 lg:ml-3" size={30} />
             </span>
           </button>
+          {/* <div className="absolute md:block hidden -z-10 w-[50%] h-[50%] right-100 bottom-20 overflow-x-hidden blue__gradient" /> */}
         </div>
         {/* <div className=" my-6 flex items-center p-3 group">
           <div className="text-5xl font-bold text-orange-500 mr-4 hover:scale-110 duration-300">

@@ -33,32 +33,27 @@ const Stats = () => {
 
   return (
     <section className="w-[100vw] h-full bg-[#89CFF0] pt-10 my-20 pb-28 -z-10 overflow-x-hidden">
-      <h1 className="flex justify-center items-center text-5xl lg:text-6xl text-[#060229] font-bold py-4">
+      <h1 className="flex justify-center items-center text-4xl md:text-5xl  lg:text-6xl text-[#060229] font-bold py-4">
         Achievements
       </h1>
-      <div className="w-full max-w-screen-xl mt-10 md:mx-auto md:flex grid justify-center items-center  gap-10 ">
-        {stats.map((stat) => (
+      <div className="w-full max-w-screen-lg mx-auto mt-4 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4 py-4 ">
+        {stats.map(({ id, image, title, value, unit }) => (
           <div
-            key={stat.id}
-            className="relative flex items-center justify-center h-[480px] w-[340px] overflow-hidden rounded-3xl"
+            key={id}
+            className="relative h-[480px] overflow-hidden rounded-3xl shadow-blue-500 shadow-2xl"
           >
             <img
-              src={stat.image}
-              alt={stat.title}
-              className="w-full h-full object-cover object-center transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl m-5 rounded-3xl  "
+              src={image}
+              alt={title}
+              className="w-full h-full  object-cover object-center transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl rounded-3xl"
             />
-            <div className="absolute bottom-0 p-6 justify-start w-full flex-col bg-black bg-opacity-50 rounded-b-3xl ">
-              {/* <div className="flex justify-center items-center w-16 h-16 rounded-lg glassmorphism mb-6">
-                <img
-                  src={headset}
-                  alt="headset"
-                  className="w-1/2 h-1/2 object-contai"
-                />
-              </div> */}
+            <div className="absolute bottom-0 p-6 w-full flex flex-col bg-black bg-opacity-50 rounded-b-3xl">
               <p className="font-normal text-4xl text-white uppercase">
-                {stat.title}
+                {title}
               </p>
-              <h2 className="mt-2 font-semibold text-5xl md:text-5xl text-white ">{`${stat.value} ${stat.unit}`}</h2>
+              <h2 className="mt-2 font-semibold text-4xl  text-white">
+                {`${value} ${unit}`}
+              </h2>
             </div>
           </div>
         ))}
