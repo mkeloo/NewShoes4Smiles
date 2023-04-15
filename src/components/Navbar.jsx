@@ -5,7 +5,6 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
 import { Link } from 'react-router-dom';
-import sidebarLogo from '../assets/HomeLogo.png';
 // import DropdownMenu from './DropdownMenu';
 
 const Navbar = () => {
