@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
 import { Link } from 'react-router-dom';
+
 // import DropdownMenu from './DropdownMenu';
 
 const Navbar = () => {
@@ -291,7 +292,7 @@ const Navbar = () => {
       {/* Hamburger Menu */}
       <div
         onClick={() => setIsMenuOpen(true)}
-        className="flex lg:hidden z-[100] text-orange-800 cursor-pointer"
+        className="flex lg:hidden z-[100] text-orange-500 cursor-pointer"
       >
         {sidebar ? (
           <AiOutlineClose
@@ -324,8 +325,8 @@ const Navbar = () => {
       <div
         className={
           sidebar
-            ? 'bg-orange-400 fixed w-[250px] h-screen z-10 top-0 left-0 duration-500 ease-in-out'
-            : 'bg-orange-400 fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
+            ? 'bg-indigo-900 fixed w-[250px] h-screen z-10 top-0 left-0 duration-500 ease-in-out'
+            : 'bg-indigo-900 fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
         }
       >
         {/* <img src={sidebarLogo} alt="logo" className="" /> */}
@@ -336,7 +337,7 @@ const Navbar = () => {
               <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>
                 <li
                   key={id}
-                  className="text-xl font-bold  text-blue-800  py-5 flex duration-300  ease-in-out"
+                  className="text-xl font-bold  text-orange-400  py-5 flex duration-300  ease-in-out"
                 >
                   {title}
 
