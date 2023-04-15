@@ -3,7 +3,7 @@ import AboutUsPic from './AboutUsPic';
 // import About from './About';
 import Mission from './Mission';
 import OriginStory from './OriginStory';
-import Team from './Team';
+import Board from './Board';
 import { motion } from 'framer-motion';
 
 const AboutMain = () => {
@@ -18,7 +18,7 @@ const AboutMain = () => {
       {/* <About /> */}
       <Mission />
       <OriginStory />
-      <Team />
+      <Board />
     </motion.section>
   );
 };

@@ -172,3 +172,36 @@
   background-size: 100% 3px;
   background-position: 0 100%;
 }
+
+/* Navbar Dropdown Menu css */
+nav ul li {
+  position: relative;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9fafb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul ul li {
+  width: 100%;
+}
+
+nav ul ul a {
+  color: #444444;
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+}
+
+nav ul ul a:hover {
+  color: #f98151;
+}

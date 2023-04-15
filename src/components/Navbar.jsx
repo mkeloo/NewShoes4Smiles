@@ -79,21 +79,79 @@ const Navbar = () => {
       id: 2,
       title: 'Who We Are',
       url: 'about',
+      dropdown: [
+        {
+          id: 1,
+          title: 'Mission',
+          url: 'mission',
+        },
+        {
+          id: 2,
+          title: 'Origin Story',
+          url: 'origin-story',
+        },
+        {
+          id: 3,
+          title: 'Meet the Board',
+          url: 'board',
+        },
+      ],
     },
     {
       id: 3,
       title: 'What We Do',
       url: 'what-we-do',
+      dropdown: [
+        {
+          id: 1,
+          title: 'Shoe Drive',
+          url: 'shoe-drive',
+        },
+        {
+          id: 2,
+          title: 'Kicks 4 Kids',
+          url: 'kicks-4-kids',
+        },
+        {
+          id: 3,
+          title: 'Procedure',
+          url: 'procedure',
+        },
+      ],
     },
     {
       id: 4,
       title: 'Get Involved',
       url: 'get-involved',
+      dropdown: [
+        {
+          id: 1,
+          title: 'Join Our Team',
+          url: 'join-us',
+        },
+        {
+          id: 2,
+          title: 'Socials',
+          url: 'socials',
+        },
+      ],
     },
     {
       id: 5,
       title: 'Events',
       url: 'events',
+      dropdown: [
+        {
+          id: 1,
+          title: 'Upcoming Events',
+          url: 'upcoming-events',
+        },
+        {
+          id: 2,
+          title: '404',
+          url: '404',
+        },
+      ],
     },
     {
       id: 6,
@@ -144,33 +202,6 @@ const Navbar = () => {
       url: '404',
     },
   ];
-  // return (
-  //   <nav>
-  //     {/* <div className="text-3xl text-bold m-8">Navbar</div> */}
-  //     <div>
-  //       <ul className="flex m-2">
-  //         <li className="p-2">
-  //           <Link to="/home">Home</Link>
-  //         </li>
-  //         <li className="p-2">
-  //           <Link to="/about">About</Link>
-  //         </li>
-  //         <li className="p-2">
-  //           <Link to="/contact">Contact</Link>
-  //         </li>
-  //         <li className="p-2">
-  //           <Link to="/events">Events</Link>
-  //         </li>
-  //         <li className="p-2">
-  //           <Link to="/join-us">Join Us</Link>
-  //         </li>
-  //         <li className="p-2">
-  //           <Link to="/shoe-drive">Shoe Drive</Link>
-  //         </li>
-  //       </ul>
-  //     </div>
-  //   </nav>
-  // );
 
   return (
     // lg screen classes: md:rounded-none md:mt-0  border-[5px] border-orange-600
@@ -189,7 +220,7 @@ const Navbar = () => {
       {/* Large Screen Menu */}
       {/* <img src={logo} alt="/" className="object-fit w-[120px] h-[120px]" /> */}
       <ul className="hidden lg:flex">
-        {links.map(({ id, url, title }) => {
+        {links.map(({ id, url, title, dropdown }) => {
           return (
             <Link
               to={url}
@@ -204,7 +235,20 @@ const Navbar = () => {
                 className="p-4 hover:text-orange-400 lg:text-[18px]  md:text-sm font-bold duration-300 link link-underline link-underline-black"
               >
                 {title}
-                {/* <DropdownMenu /> */}
+                {dropdown && (
+                  <ul className="absolute bg-[#89CFF0] px-1 w-[140px] rounded-b-3xl">
+                    {dropdown.map(({ id, title, url }) => (
+                      <li key={id} className="py-1">
+                        <Link
+                          to={url}
+                          className="text-black text-lg hover:text-blue-700"
+                        >
+                          {title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             </Link>
           );
@@ -280,8 +324,8 @@ const Navbar = () => {
       <div
         className={
           sidebar
-            ? 'bg-white fixed w-[300px] h-screen z-10 top-0 left-0 duration-500 ease-in-out'
-            : 'bg-white fixed w-[300px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
+            ? 'bg-white fixed w-[250px] h-screen z-10 top-0 left-0 duration-500 ease-in-out'
+            : 'bg-white fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
         }
       >
         <AiOutlineMenu
@@ -297,15 +341,26 @@ const Navbar = () => {
           <ul className="flex flex-col p-8 text-black">
             {/* Populating List for Sidebar */}
             {mobileLinks.map(({ id, title, url }) => (
-              <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>
-                <li
-                  key={id}
-                  // hover:translate-x-2 hover:scale-105 hover:border-indigo-800 hover:border-2 hover:rounded-md hover:border-spacing-2 hover:underline
-                  className="text-xl border-white text-black border-y-2 border-t-2  py-5 flex duration-300 hover:border-black hover:border-y-2 hover:border-t-2 ease-in-out"
-                >
+              <li
+                key={id}
+                className="text-xl border-white text-black border-y-2 border-t-2  py-5 flex duration-300 hover:border-black hover:border-y-2 hover:border-t-2 ease-in-out"
+              >
+                <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>
                   {title}
-                </li>
-              </Link>
+                </Link>
+
+                {/* <ul className="pl-4">
+                  {' '}
+                  {dropdown &&
+                    dropdown.map(({ id, title, url }) => (
+                      <li key={id} className="py-1">
+                        <Link to={url} className="text-black text-lg">
+                          {title}
+                        </Link>
+                      </li>
+                    ))}
+                </ul> */}
+              </li>
             ))}
           </ul>
         </nav>
