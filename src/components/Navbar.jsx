@@ -330,7 +330,7 @@ const Navbar = () => {
       >
         {/* <img src={sidebarLogo} alt="logo" className="" /> */}
         <nav>
-          <ul className="flex flex-col p-8 text-black">
+          <ul className="flex flex-col p-8 text-black ml-6">
             {/* Populating List for Sidebar */}
             {mobileLinks.map(({ id, title, url }) => (
               <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>
