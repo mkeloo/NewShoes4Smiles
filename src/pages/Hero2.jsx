@@ -18,7 +18,7 @@ const Hero2 = () => {
       <div className="absolute md:hidden block -z-1 w-[60%] h-[40%]  pink__gradient" /> */}
 
       <div className="lg:w-1/2 w-full p-8 z-10 mt-8 ">
-        <h1 className=" text-4xl md:text-6xl font-bold    text-[#F9F5EB] mb-8">
+        <h1 className=" text-4xl md:text-6xl font-bold    text-[#F9F5EB] mb-3 md:mb-8">
           {/* Help Donate Shoes to People in Need */}
           {/* Donating Shoes to Community */}
           <span className="text-orange-500">
@@ -26,6 +26,13 @@ const Hero2 = () => {
           </span>
           Donate your shoes to those in need.
         </h1>
+        <div className=" lg:hidden pb-6 ">
+          <img
+            src={FrontPagePic}
+            alt="shoe1"
+            className="object-contain rounded-xl shadow-orange-500 shadow-md md:w-[400px] md:h-[500px]"
+          />
+        </div>
         <p className="text-lg md:text-2xl text-[#F9F5EB] mb-10 ">
           Providing shoes and other necessities to people in Gainesville's
           underserved communities.
@@ -40,7 +47,7 @@ const Hero2 = () => {
           {/* <div className="absolute md:block hidden -z-10 w-[50%] h-[50%] right-100 bottom-20 overflow-x-hidden blue__gradient" /> */}
         </div>
       </div>
-      <div className="md:w-1/2 h-full overflow-hidden hidden md:flex ">
+      <div className="lg:w-1/2 h-full overflow-hidden hidden lg:flex ">
         <img src={FrontPagePic} alt="shoe1" className="object-contain" />
         {/* <div className="absolute -z-2 w-[40%] h-[35%] top-0 right-50 pink__gradient" /> */}
         {/* <div className="absolute -z-2 w-[80%] h-[80%] left-100 rounded-full white__gradient" /> */}

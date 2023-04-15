@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
 import { Link } from 'react-router-dom';
+import sidebarLogo from '../assets/HomeLogo.png';
 // import DropdownMenu from './DropdownMenu';
 
 const Navbar = () => {
@@ -324,32 +325,23 @@ const Navbar = () => {
       <div
         className={
           sidebar
-            ? 'bg-white fixed w-[250px] h-screen z-10 top-0 left-0 duration-500 ease-in-out'
-            : 'bg-white fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
+            ? 'bg-orange-400 fixed w-[250px] h-screen z-10 top-0 left-0 duration-500 ease-in-out'
+            : 'bg-orange-400 fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
         }
       >
-        <AiOutlineMenu
-          onClick={() => setSidebar(!sidebar)}
-          size={30}
-          className="cursor-pointer absolute right-4 top-4  mt-1"
-        />
-        {/* <h2 className="text-3xl p-4 text-black ">
-          <span className="font-serif font-semibold">BOGO </span>
-          <span className="font-bold">Eats</span>
-        </h2> */}
+        {/* <img src={sidebarLogo} alt="logo" className="" /> */}
         <nav>
           <ul className="flex flex-col p-8 text-black">
             {/* Populating List for Sidebar */}
             {mobileLinks.map(({ id, title, url }) => (
-              <li
-                key={id}
-                className="text-xl border-white text-black border-y-2 border-t-2  py-5 flex duration-300 hover:border-black hover:border-y-2 hover:border-t-2 ease-in-out"
-              >
-                <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>
+              <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>
+                <li
+                  key={id}
+                  className="text-xl font-bold  text-blue-600  py-5 flex duration-300  ease-in-out"
+                >
                   {title}
-                </Link>
 
-                {/* <ul className="pl-4">
+                  {/* <ul className="pl-4">
                   {' '}
                   {dropdown &&
                     dropdown.map(({ id, title, url }) => (
@@ -360,7 +352,8 @@ const Navbar = () => {
                       </li>
                     ))}
                 </ul> */}
-              </li>
+                </li>
+              </Link>
             ))}
           </ul>
         </nav>
