@@ -32,7 +32,7 @@ const Stats = () => {
   ];
 
   return (
-    <section className="w-[100vw] h-full bg-[#89CFF0] pt-10 my-20 pb-28 -z-10 overflow-x-hidden">
+    <section className="w-[100vw] h-full bg-[#89CFF0] pt-10  pb-28 -z-10 overflow-x-hidden">
       <h1 className="flex justify-center items-center text-4xl md:text-5xl  lg:text-6xl text-[#060229] font-bold py-4">
         Achievements
       </h1>
