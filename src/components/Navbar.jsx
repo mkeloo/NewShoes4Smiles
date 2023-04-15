@@ -337,7 +337,7 @@ const Navbar = () => {
               <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>
                 <li
                   key={id}
-                  className="text-xl font-bold  text-orange-400  py-5 flex duration-300  ease-in-out"
+                  className="text-xl font-bold  text-orange-500  py-5 flex duration-300  ease-in-out"
                 >
                   {title}
 
