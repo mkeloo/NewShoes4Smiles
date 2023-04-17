@@ -6,8 +6,6 @@ import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
 import { Link } from 'react-router-dom';
 
-// import DropdownMenu from './DropdownMenu';
-
 const Navbar = () => {
   // Navbar State
   const [sidebar, setSidebar] = useState(false);

@@ -30,7 +30,7 @@ const Hero2 = () => {
           <img
             src={FrontPagePic}
             alt="shoe1"
-            className="object-contain rounded-xl shadow-orange-500 shadow-md md:w-[400px] md:h-[500px]"
+            className="object-contain rounded-xl md:w-[400px] md:h-[500px]"
           />
         </div>
         <p className="text-lg md:text-2xl text-[#F9F5EB] mb-10 ">

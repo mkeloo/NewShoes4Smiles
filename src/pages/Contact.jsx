@@ -45,8 +45,8 @@ const Contact = () => {
       id="contact"
       className="w-[100vw] h-full bg-[#89CFF0]  flex justify-center items-center p-2 -z-10  "
     >
-      <div className="absolute -z-1 w-[50%] h-[50%] left-20 top-20 white__gradient" />
-      <div className="absolute -z-2 w-[50%] h-[50%] left-20 top-20 blue__gradient" />
+      {/* <div className="absolute -z-1 w-[50%] h-[50%] left-20 top-20 white__gradient" />
+      <div className="absolute -z-2 w-[50%] h-[50%] left-20 top-20 blue__gradient" /> */}
       <div className=" rounded-2xl md:mx-0 md:p-0 mx-4 mt-8 flex">
         <form
           ref={form}
@@ -106,7 +106,7 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className="absolute z-[1] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+        {/* <div className="absolute z-[1] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" /> */}
       </div>
     </motion.section>
   );

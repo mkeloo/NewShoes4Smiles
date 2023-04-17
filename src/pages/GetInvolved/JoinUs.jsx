@@ -39,7 +39,7 @@ const JoinUs = () => {
   return (
     <div
       id="join"
-      className="w-[100vw] h-[100vh] bg-[#060229] flex justify-center items-center mt-20"
+      className="w-[100vw] h-[100vh] bg-[#060229] flex justify-center items-center mt-10"
     >
       <div className=" w-full md:flex md:grid-cols-2 md:p-8 mb-8 md:mx-16 m-0 grid-col-reverse  mx-2 p-2">
         <div className="flex flex-col justify-center px-4 md:max-w-[65%] max-w-full pt-8 mt-3">

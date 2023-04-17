@@ -38,7 +38,7 @@ const Procedure = () => {
   return (
     <section>
       {/* Small Screen Content */}
-      <section className="w-full h-full bg-[#89CFF0] pb-10 block md:hidden">
+      <section className="w-full h-full bg-[#89CFF0] pb-10 block md:hidden ">
         {procedureData.map(({ id, src, alt, title, desc }) => (
           <section
             key={id}
@@ -65,7 +65,7 @@ const Procedure = () => {
         ))}
       </section>
       {/* Large Screen Content */}
-      <section className="w-full h-full bg-[#89CFF0] pb-10 hidden md:block ">
+      <section className="w-full h-full bg-[#89CFF0] pb-10 hidden md:block  pt-[100px]">
         {/* Collection Section */}
         <section className="w-full h-full bg-[#89CFF0] flex justify-center items-center  -z-10">
           <div className=" w-full md:flex  md:px-8 md:mx-16 md:py-4 md:my-4 grid grid-col-reverse rounded-2xl   mx-4 p-2 ">

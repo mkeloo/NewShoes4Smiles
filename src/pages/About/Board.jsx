@@ -68,7 +68,7 @@ const images = [
 
 const Team = () => {
   return (
-    <section className="w-full h-full bg-[#89CFF0] flex justify-center items-center">
+    <section className="w-full h-full bg-[#89CFF0] flex justify-center items-center pl-0 md:pt-[60px] pt-[50px] ">
       <div className="w-full max-w-screen-xl md:p-8 md:mx-16 m-10 grid-col-reverse rounded-2xl mx-4 p-2">
         <h1 className="lg:text-6xl text-4xl text-[#060229] items-center flex justify-center font-bold pb-10">
           Meet the Board
