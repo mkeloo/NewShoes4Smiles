@@ -236,12 +236,12 @@ const Navbar = () => {
               >
                 {title}
                 {dropdown && (
-                  <ul className="absolute bg-[#89CFF0] px-1 w-[140px] rounded-b-3xl">
+                  <ul className="absolute bg-[#89CFF0] px-1 w-[140px] rounded-b-3xl border-b-4 border-r-4 border-l-4 border-blue-700">
                     {dropdown.map(({ id, title, url }) => (
                       <li key={id} className="py-1">
                         <Link
                           to={url}
-                          className="text-black text-lg hover:text-blue-700"
+                          className="text-black text-lg hover:text-blue-700 "
                         >
                           {title}
                         </Link>
@@ -341,7 +341,7 @@ const Navbar = () => {
               <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>
                 <li
                   key={id}
-                  className="text-xl font-bold  text-orange-500  py-5 flex duration-300  ease-in-out"
+                  className="text-xl font-bold  text-orange-500  py-5 flex duration-300 ease-in-out"
                 >
                   {title}
 
