@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="bg-[#060229] overflow-hidden	">
       {loading ? (
-        <div className=" w-full h-screen overflow-x-hidden overflow-y-hidden flex flex-col justify-center bg-[#0d013b] items-center ">
+        <div className=" w-full h-[100vh] pb-14 overflow-x-hidden overflow-y-hidden flex flex-col justify-center bg-[#0d013b] items-center ">
           <img
             src={image}
             alt=""
