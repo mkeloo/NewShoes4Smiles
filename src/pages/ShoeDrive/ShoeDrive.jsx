@@ -36,7 +36,7 @@ const ShoeDrive = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       id="shoedrive"
-      className="w-[100vw] h-full flex justify-center items-center md:my-20 mt-16 bg-[#060229]"
+      className="w-[100vw] h-full flex justify-center items-center md:my-14 mt-10 bg-[#060229]"
     >
       {/* Different card: bg-[#607EAA] rounded-3xl shadow-xl shadow-orange-200  */}
       <div className="  w-full md:flex md:grid-cols-2 md:p-8 md:mx-16 m-10 grid-col-reverse rounded-2xl mx-4 p-2">
