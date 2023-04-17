@@ -324,8 +324,8 @@ const Navbar = () => {
       <div
         className={
           sidebar
-            ? 'bg-indigo-900 fixed w-[250px] h-screen z-10 top-0 left-0 duration-500 ease-in-out'
-            : 'bg-indigo-900 fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
+            ? 'bg-[#060229] fixed w-[250px] h-screen z-10 top-0 left-0 duration-500 ease-in-out'
+            : 'bg-[#060229] fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
         }
       >
         <img
