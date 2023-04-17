@@ -52,7 +52,7 @@ const Procedure = () => {
                 <img
                   src={src}
                   alt={alt}
-                  className="lg:w-[450px] z-10 lg:h-[500px] md:w-[260px] md:h-[310px] w-[175px] h-[210px] md:mt-8 m-2 object-cover rounded-2xl shadow-lg shadow-blue-900"
+                  className="lg:w-[450px] z-10 lg:h-[500px] md:w-[260px] md:h-[310px] w-[210px] h-[250px] md:mt-8 m-2 object-cover rounded-2xl shadow-lg shadow-blue-900"
                 />
               </div>
               <div className="flex flex-col justify-center md:px-10 px-6 md:max-w-[65%] max-w-full z-10">
