@@ -8,6 +8,7 @@ import ShoedrivePic from '../../assets/shoeDrive.JPG';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
+import { motion } from 'framer-motion';
 
 // const images = [
 //   {
@@ -29,7 +30,11 @@ import 'swiper/css/autoplay';
 
 const ShoeDrive = () => {
   return (
-    <div
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
       id="shoedrive"
       className="w-[100vw] h-full flex justify-center items-center md:my-20 mt-16 bg-[#060229]"
     >
@@ -120,7 +125,7 @@ We believe in the power of coming together to make a positive impact and are pro
           </p>
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Shoe1 from '../../assets/shoeDr1.jpg';
 import Shoe2 from '../../assets/shoeDr2.jpg';
 import Shoe3 from '../../assets/shoeDr3.jpg';
+import { motion } from 'framer-motion';
 
 const procedureData = [
   {
@@ -36,7 +37,12 @@ const procedureData = [
 
 const Procedure = () => {
   return (
-    <section>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* Small Screen Content */}
       <section className="w-full h-full bg-[#060229] pb-10 block md:hidden ">
         <h1 className=" text-5xl text-[#EAE3D2]  font-bold py-6 pb-8 mt-10 flex justify-center items-center">
@@ -170,7 +176,7 @@ const Procedure = () => {
         </section>
       </section>
       ;
-    </section>
+    </motion.section>
   );
 };
 

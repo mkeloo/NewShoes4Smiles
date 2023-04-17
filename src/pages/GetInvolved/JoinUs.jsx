@@ -2,6 +2,7 @@ import React from 'react';
 import Join from '../../assets/join.jpg';
 // import { HiUserGroup } from 'react-icons/hi';
 // import { FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const JoinUs = () => {
   // const socials = [
@@ -37,7 +38,11 @@ const JoinUs = () => {
   //   },
   // ];
   return (
-    <div
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
       id="join"
       className="w-[100vw] h-[100vh] bg-[#060229] flex justify-center items-center mt-10"
     >
@@ -81,7 +86,7 @@ const JoinUs = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 

@@ -1,9 +1,16 @@
 import React from 'react';
 import Kicks4Kids from '../../assets/kicks4kids.JPG';
+import { motion } from 'framer-motion';
 
 const Kicks = () => {
   return (
-    <section className="w-[100vw] lg:h-[100vh] h-full bg-[#89CFF0] flex justify-center items-center pt-10 -z-10">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-[100vw] lg:h-[100vh] h-full bg-[#89CFF0] flex justify-center items-center pt-10 -z-10"
+    >
       <div className=" w-full md:flex md:grid-cols-2 md:p-8 md:m-16 m-0 grid-col-reverse  mx-4 p-2 pt-3 pb-8 lg:pt-0">
         <div className="flex flex-col justify-center md:px-10 px-8 md:max-w-[65%] max-w-full z-10">
           <h1 className="lg:text-6xl text-[#060229]  text-4xl font-bold py-6 pb-4 flex justify-center items-center">
@@ -28,7 +35,7 @@ const Kicks = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

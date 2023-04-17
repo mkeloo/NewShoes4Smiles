@@ -1,9 +1,16 @@
 import React from 'react';
 import FounderPic from '../../assets/founder.jpeg';
+import { motion } from 'framer-motion';
 
 const OriginStory = () => {
   return (
-    <section className="w-[100vw] h-full bg-[#060229] flex justify-center items-center md:pt-[60px] pt-[30px]">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-[100vw] h-full bg-[#060229] flex justify-center items-center md:pt-[60px] pt-[30px]"
+    >
       <div className=" md:flex md:grid-cols-2 md:p-8 md:mx-16 m-8 grid-col-1 rounded-2xl mx-4 p-2">
         {/* Large Screen Picture */}
         <div className="flex justify-center items-center">
@@ -47,7 +54,7 @@ const OriginStory = () => {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

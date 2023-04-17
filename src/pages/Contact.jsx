@@ -41,7 +41,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.5 }}
       id="contact"
       className="w-[100vw] h-full bg-[#89CFF0]  flex justify-center items-center p-2 -z-10  "
     >

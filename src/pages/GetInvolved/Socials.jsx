@@ -7,6 +7,7 @@ import React from 'react';
 
 import { HiUserGroup, HiOutlineMail } from 'react-icons/hi';
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const socials = [
   {
@@ -49,7 +50,13 @@ const socials = [
 
 const Socials = () => {
   return (
-    <section className="w-[100vw] lg:h-[100vh] h-full bg-[#89CFF0] flex justify-center items-center py-14 pt-14 -z-10">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-[100vw] lg:h-[100vh] h-full bg-[#89CFF0] flex justify-center items-center py-14 pt-14 -z-10"
+    >
       <div className="flex flex-col justify-center px-10 lg:pt-10 pt-0">
         <h1 className="lg:text-6xl md:text-4xl text-[#060229] text-3xl font-bold md:mb-10 mb-0">
           Connect With Us on our{' '}
@@ -81,7 +88,7 @@ const Socials = () => {
           </li>
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
