@@ -40,7 +40,7 @@ const Hero2 = () => {
         </p>
         <div className="flex flex-col md:flex-row  pb-6">
           <Link to={'/events'}>
-            <button className="text-white font-poppins font-bold p-4 lg:px-3 px-8 lg:text-xl text-lg lg:mx-20 mx-8 group md:text-lg border-4 lg:py-4 py-2 flex items-center bg-[#0a00c1] border-[#00035d] hover:bg-orange-600 hover:font-bold hover:border-orange-900 duration-300 hover:scale-110 rounded-xl">
+            <button className="text-white font-poppins font-bold p-4 lg:px-3 px-8 lg:text-xl text-lg lg:mx-20 mx-8 group md:text-lg border-4 lg:py-4 py-3 flex items-center bg-[#0a00c1] border-[#00035d] hover:bg-orange-600 hover:font-bold hover:border-orange-900 duration-300 hover:scale-110 rounded-xl">
               Upcoming Events
               <span className="duration-300 group-hover:rotate-90">
                 <HiArrowNarrowRight className="ml-2 lg:ml-3" size={30} />
