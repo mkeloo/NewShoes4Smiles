@@ -328,7 +328,11 @@ const Navbar = () => {
             : 'bg-indigo-900 fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
         }
       >
-        <img src={logo} alt="logo" className="w-[220px] my-2  ml-6 h-[70px]" />
+        <img
+          src={logo}
+          alt="logo"
+          className="w-[220px] my-4 mx-auto h-[70px]"
+        />
         {/* <h1 className="text-3xl py-6 px-4 ml-6 font-bold text-orange-500">
           Shoes<span className="text-blue-600">4</span> <br />
           Smiles
