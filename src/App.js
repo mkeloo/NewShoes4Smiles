@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 import Layout from './Layout/Layout';
 import BarLoader from 'react-spinners/BarLoader';
 import image from './assets/footer.png';

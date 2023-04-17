@@ -47,7 +47,7 @@ const Footer = () => {
   ];
   return (
     //
-    <Parallax className="bg-[#060229] h-full w-full justify-between grid-cols-1 grid md:grid-cols-3 items-center  mx-auto py-4 px-3 md:py-16 md:px-4  text-white">
+    <Parallax className="bg-[#060229] h-full w-full justify-between grid-cols-1 grid md:grid-cols-3 items-center  mx-auto py-4 px-3 md:py-16 md:px-4  text-white border-t-2 border-[#89CFF0]">
       {/* <div className=""> */}
       {/* <h1 className="pt-1 pb-6 text-5xl lg:text-7xl font-bold logo">
           <span className="text-blue-500">
@@ -67,7 +67,7 @@ const Footer = () => {
       </Parallax>
 
       <Parallax>
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <img
             src={FooterImage}
             alt="footer"

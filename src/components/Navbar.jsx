@@ -324,8 +324,8 @@ const Navbar = () => {
       <div
         className={
           sidebar
-            ? 'bg-[#060229] fixed w-[250px] h-screen z-10 top-0 left-0 duration-500 ease-in-out'
-            : 'bg-[#060229] fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
+            ? 'bg-[#060229] fixed w-[250px] h-screen z-10 top-0 left-0 duration-500 ease-in-out  overflow-y-scroll'
+            : 'bg-[#060229] fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out  overflow-y-scroll'
         }
       >
         <img
@@ -333,12 +333,9 @@ const Navbar = () => {
           alt="logo"
           className="w-[220px] my-4 mx-auto h-[70px]"
         />
-        {/* <h1 className="text-3xl py-6 px-4 ml-6 font-bold text-orange-500">
-          Shoes<span className="text-blue-600">4</span> <br />
-          Smiles
-        </h1> */}
+
         <nav>
-          <ul className="flex flex-col p-8 text-black ml-6">
+          <ul className="flex flex-col p-8 text-black ml-6 ">
             {/* Populating List for Sidebar */}
             {mobileLinks.map(({ id, title, url }) => (
               <Link to={`/${url}`} onClick={() => setSidebar(!sidebar)}>

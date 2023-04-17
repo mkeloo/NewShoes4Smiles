@@ -38,7 +38,7 @@ const Procedure = () => {
   return (
     <section>
       {/* Small Screen Content */}
-      <section className="w-full h-full bg-[#060229] pb-10 block md:hidden ">
+      <section className="w-full h-full bg-[#060229] pb-10 block md:hidden  pt-[50px]">
         <h1 className=" lg:text-6xl md:text-4xl text-3xl text-[#EAE3D2]  font-bold py-6 pb-8 mt-10 flex justify-center items-center">
           Procedure
         </h1>
