@@ -38,11 +38,14 @@ const Procedure = () => {
   return (
     <section>
       {/* Small Screen Content */}
-      <section className="w-full h-full bg-[#89CFF0] pb-10 block md:hidden ">
+      <section className="w-full h-full bg-[#060229] pb-10 block md:hidden ">
+        <h1 className=" lg:text-6xl md:text-4xl text-3xl text-[#EAE3D2]  font-bold py-6 pb-8 mt-10 flex justify-center items-center">
+          Procedure
+        </h1>
         {procedureData.map(({ id, src, alt, title, desc }) => (
           <section
             key={id}
-            className="w-full h-full bg-[#89CFF0] flex justify-center items-center  -z-10"
+            className="w-full h-full bg-[#060229] flex justify-center items-center  -z-10"
           >
             <div className=" w-full md:flex  md:px-8 md:mx-16 md:py-4 md:my-4 grid grid-col-reverse rounded-2xl  mx-4 p-2 py-6 ">
               <div className="flex justify-center items-center">
@@ -53,10 +56,10 @@ const Procedure = () => {
                 />
               </div>
               <div className="flex flex-col justify-center md:px-10 px-6 md:max-w-[65%] max-w-full z-10">
-                <h1 className="lg:text-6xl md:text-4xl text-[#060229] text-3xl font-bold py-6 pb-2 flex justify-center items-center">
+                <h1 className="lg:text-6xl md:text-4xl text-[#EAE3D2] text-3xl font-bold py-6 pb-2 flex justify-center items-center">
                   {title}
                 </h1>
-                <p className="text-sm md:text-lg my-2 text-[#060229] lg:text-2xl z-10 px-1">
+                <p className="text-sm md:text-lg my-2 text-[#EAE3D2] lg:text-2xl z-10 px-1">
                   {desc}
                 </p>
               </div>
@@ -65,9 +68,12 @@ const Procedure = () => {
         ))}
       </section>
       {/* Large Screen Content */}
-      <section className="w-full h-full bg-[#89CFF0] pb-10 hidden md:block  pt-[100px]">
+      <section className="w-full h-full bg-[#060229] pb-10 hidden md:block  pt-[100px]">
+        <h1 className=" lg:text-6xl md:text-4xl text-3xl text-[#EAE3D2]  font-bold py-6 pb-8 flex justify-center items-center">
+          Procedure
+        </h1>
         {/* Collection Section */}
-        <section className="w-full h-full bg-[#89CFF0] flex justify-center items-center  -z-10">
+        <section className="w-full h-full bg-[#060229] flex justify-center items-center  -z-10">
           <div className=" w-full md:flex  md:px-8 md:mx-16 md:py-4 md:my-4 grid grid-col-reverse rounded-2xl   mx-4 p-2 ">
             <div className="flex justify-center items-center">
               <img
@@ -77,10 +83,10 @@ const Procedure = () => {
               />
             </div>
             <div className="flex flex-col justify-center md:px-10 px-6 md:max-w-[65%] max-w-full z-10">
-              <h1 className="lg:text-6xl md:text-4xl text-[#060229] text-3xl font-bold py-6 pb-2 flex justify-center items-center">
+              <h1 className="lg:text-6xl md:text-4xl text-[#EAE3D2] text-3xl font-bold py-6 pb-2 flex justify-center items-center">
                 Collection
               </h1>
-              <p className="text-sm md:text-lg my-2 text-[#060229] lg:text-2xl z-10 px-1">
+              <p className="text-sm md:text-lg my-2 text-[#EAE3D2] lg:text-2xl z-10 px-1">
                 Distribute donation bins on campus and promote the shoe drive to
                 students, encouraging them to donate any gently-used shoes they
                 no longer need. Store the donated shoes in a secure location
@@ -91,13 +97,13 @@ const Procedure = () => {
         </section>
 
         {/* Cleaning Section */}
-        <section className="w-full h-full bg-[#89CFF0] flex justify-center items-center flex-col-reverse -z-10">
+        <section className="w-full h-full bg-[#060229] flex justify-center items-center flex-col-reverse -z-10">
           <div className=" w-full md:flex md:px-8 md:mx-16 md:py-4 md:my-4 m-0 grid  grid-col-reverse  rounded-2xl mx-4 p-2 ">
             <div className="flex flex-col justify-center md:px-10 px-6 md:max-w-[65%] max-w-full z-10">
-              <h1 className="lg:text-6xl md:text-4xl text-[#060229]  text-3xl font-bold py-6 pb-2 flex justify-center items-center">
+              <h1 className="lg:text-6xl md:text-4xl text-[#EAE3D2]  text-3xl font-bold py-6 pb-2 flex justify-center items-center">
                 Cleaning
               </h1>
-              <p className="text-sm md:text-lg my-2 text-[#060229] lg:text-2xl z-10 px-1">
+              <p className="text-sm md:text-lg my-2 text-[#EAE3D2] lg:text-2xl z-10 px-1">
                 Clean and refurbish the donated shoes, removing any dirt or
                 debris and polishing them to restore their appearance. Dry the
                 shoes thoroughly before moving on to the assembly phase.
@@ -114,7 +120,7 @@ const Procedure = () => {
         </section>
 
         {/* Assembly Section */}
-        <section className="w-full h-full bg-[#89CFF0] flex justify-center items-center  -z-10">
+        <section className="w-full h-full bg-[#060229] flex justify-center items-center  -z-10">
           <div className=" w-full md:flex  md:px-8 md:mx-16 md:py-4 md:my-4 grid grid-col-reverse rounded-2xl  mx-4 p-2 ">
             <div className="flex justify-center items-center">
               <img
@@ -124,10 +130,10 @@ const Procedure = () => {
               />
             </div>
             <div className="flex flex-col justify-center md:px-10 px-6 md:max-w-[65%] max-w-full z-10">
-              <h1 className="lg:text-6xl md:text-4xl text-[#060229]  text-3xl font-bold py-6 pb-2 flex justify-center items-center">
+              <h1 className="lg:text-6xl md:text-4xl text-[#EAE3D2]  text-3xl font-bold py-6 pb-2 flex justify-center items-center">
                 Assembly
               </h1>
-              <p className="text-sm md:text-lg my-2 text-[#060229] lg:text-2xl z-10 px-1">
+              <p className="text-sm md:text-lg my-2 text-[#EAE3D2] lg:text-2xl z-10 px-1">
                 Inspect each cleaned shoe for any defects or issues, label them
                 by size, gender, and condition, and sort them accordingly.
                 Package the shoes into groups by size, gender, and condition,
@@ -139,13 +145,13 @@ const Procedure = () => {
         </section>
 
         {/* Donation Section */}
-        <section className="w-full h-full bg-[#89CFF0] flex justify-center items-center  -z-10">
+        <section className="w-full h-full bg-[#060229] flex justify-center items-center  -z-10">
           <div className=" w-full md:flex m md:px-8 md:mx-16 md:py-4 md:my-4 m-0 grid grid-col-reverse rounded-2xl   mx-4 p-2 ">
             <div className="flex flex-col justify-center md:px-10 px-6 md:max-w-[65%] max-w-full z-10">
-              <h1 className="lg:text-6xl md:text-4xl text-[#060229]  text-3xl font-bold py-6 pb-2 flex justify-center items-center">
+              <h1 className="lg:text-6xl md:text-4xl text-[#EAE3D2]  text-3xl font-bold py-6 pb-2 flex justify-center items-center">
                 Donation
               </h1>
-              <p className="text-sm md:text-lg my-2 text-[#060229] lg:text-2xl z-10 px-1">
+              <p className="text-sm md:text-lg my-2 text-[#EAE3D2] lg:text-2xl z-10 px-1">
                 Deliver the packaged shoes to local charities and organizations,
                 making sure to document the type and quantity of shoes donated.
                 Thank the volunteers and donors for their contributions, and

@@ -10,13 +10,14 @@ const Kicks = () => {
             Kicks 4 Kids
           </h1>
           <p className="text-sm md:text-lg my-4 text-[#060229] lg:text-2xl z-10">
-            Shoes 4 Smiles is on a mission to improve the lives of disadvantaged
-            communities in our local area by providing basic necessities like
-            shoes. Through our annual shoe drive, we work with local
-            organizations to distribute donations directly to those who need
-            them most. With the support of our dedicated volunteers and
-            partners, we're making a real impact in our community, one step at a
-            time.
+            Kick 4 Kids is a new initiative that aims to provide custom shoes to
+            children going through regular medical treatments for chronic
+            diseases. We gift these children with custom pairs of Vans and Air
+            Forces based on their own interests and values. Our goal is to bring
+            a sense of joy and normalcy to children in the hospital, and giving
+            them a reminder that they are not alone. By collaborating with
+            student organizations such as UF Footprints and Dream Team, we can
+            bring a smile to the faces of children who truly deserve the best.
           </p>
         </div>
         <div className="flex justify-center items-center">
