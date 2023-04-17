@@ -331,7 +331,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="logo"
-          className="w-[220px] my-4 mx-auto h-[70px]"
+          className="w-[220px] mt-8 mx-auto h-[70px]"
         />
 
         <nav>
