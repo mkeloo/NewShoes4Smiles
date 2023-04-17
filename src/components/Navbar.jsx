@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 import logo from '../assets/logo2.png';
 import { Link } from 'react-router-dom';
+// import sidebarLogo from '../assets/sidebar-logo.jpeg';
 
 const Navbar = () => {
   // Navbar State
@@ -327,7 +328,11 @@ const Navbar = () => {
             : 'bg-indigo-900 fixed w-[250px] h-screen z-10 top-0 left-[-100%] duration-500 ease-in-out'
         }
       >
-        {/* <img src={sidebarLogo} alt="logo" className="" /> */}
+        <img src={logo} alt="logo" className="w-[220px] my-2  ml-6 h-[70px]" />
+        {/* <h1 className="text-3xl py-6 px-4 ml-6 font-bold text-orange-500">
+          Shoes<span className="text-blue-600">4</span> <br />
+          Smiles
+        </h1> */}
         <nav>
           <ul className="flex flex-col p-8 text-black ml-6">
             {/* Populating List for Sidebar */}
