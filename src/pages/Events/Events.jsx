@@ -90,7 +90,7 @@ const Events = () => {
   return (
     <div
       id="calendar"
-      className="w-[100vw] h-full grid grid-row-2 py-8 justify-center items-center bg-[#89CFF0]  pt-[80px]"
+      className="w-[100vw] h-full grid grid-row-2 py-8 justify-center items-center bg-[#89CFF0] lg:pt-[80px]"
     >
       <div className=" md:mx-0 md:p-0 mx-4 ">
         <h1 className="lg:text-6xl text-5xl text-[#060229] p-6 m-6 font-bold py-4 pb-4 flex justify-center">
