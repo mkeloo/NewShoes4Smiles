@@ -3,6 +3,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 // import logo from '../assets/HomeLogo.png';
 import FrontPagePic from '../assets/FrontPage.jpeg';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Hero2 = () => {
   return (
@@ -11,7 +12,7 @@ const Hero2 = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-[100vw] md:h-[100vh] h-full bg-[#060229] lg:pl-24 pl-0 md:pt-[60px] pt-[50px] flex flex-col md:flex-row items-center md:justify-center -z-10 overflow-hidden"
+      className="w-[100vw] md:h-[100vh] h-full bg-[#060229] lg:pl-24 pl-0 md:pt-[60px] pt-[40px] flex flex-col md:flex-row items-center md:justify-center -z-10 overflow-hidden"
     >
       {/* <div className="absolute md:hidden block -z-1 w-[80%] h-[50%]  darkblue__gradient" />
       <div className="absolute md:hidden block -z-2 w-[60%] h-[60%]  violet__gradient" />
@@ -37,13 +38,15 @@ const Hero2 = () => {
           Providing shoes and other necessities to people in Gainesville's
           underserved communities.
         </p>
-        <div className="flex flex-col md:flex-row ">
-          <button className="text-white font-poppins font-bold p-4 lg:px-3 px-8 lg:text-xl text-lg lg:mx-20 mx-8 group md:text-lg border-4 lg:py-4 py-2 flex items-center bg-[#0a00c1] border-[#00035d] hover:bg-orange-600 hover:font-bold hover:border-orange-900 duration-300 hover:scale-110 rounded-xl">
-            Checkout Our Events
-            <span className="duration-300 group-hover:rotate-90">
-              <HiArrowNarrowRight className="ml-2 lg:ml-3" size={30} />
-            </span>
-          </button>
+        <div className="flex flex-col md:flex-row  pb-6">
+          <Link to={'/events'}>
+            <button className="text-white font-poppins font-bold p-4 lg:px-3 px-8 lg:text-xl text-lg lg:mx-20 mx-8 group md:text-lg border-4 lg:py-4 py-2 flex items-center bg-[#0a00c1] border-[#00035d] hover:bg-orange-600 hover:font-bold hover:border-orange-900 duration-300 hover:scale-110 rounded-xl">
+              Upcoming Events
+              <span className="duration-300 group-hover:rotate-90">
+                <HiArrowNarrowRight className="ml-2 lg:ml-3" size={30} />
+              </span>
+            </button>
+          </Link>
           {/* <div className="absolute md:block hidden -z-10 w-[50%] h-[50%] right-100 bottom-20 overflow-x-hidden blue__gradient" /> */}
         </div>
       </div>
