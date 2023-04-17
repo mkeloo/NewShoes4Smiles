@@ -3,8 +3,8 @@ import FounderPic from '../../assets/founder.jpeg';
 
 const OriginStory = () => {
   return (
-    <section className="w-[100vw] h-full bg-[#060229] flex justify-center items-center md:pt-[60px] pt-[50px]">
-      <div className=" md:flex md:grid-cols-2 md:p-8 md:mx-16 m-10 grid-col-1 rounded-2xl mx-4 p-2">
+    <section className="w-[100vw] h-full bg-[#060229] flex justify-center items-center md:pt-[60px] pt-[30px]">
+      <div className=" md:flex md:grid-cols-2 md:p-8 md:mx-16 m-8 grid-col-1 rounded-2xl mx-4 p-2">
         {/* Large Screen Picture */}
         <div className="flex justify-center items-center">
           <img

@@ -3,7 +3,7 @@ import about1 from '../../assets/about1.jpg';
 
 const Mission = () => {
   return (
-    <section className="  w-[100vw] lg:h-[100vh] h-full bg-[#89CFF0] flex justify-center items-center  -z-10 md:pt-[60px] pt-[50px]">
+    <section className="  w-[100vw] lg:h-[100vh] h-full bg-[#89CFF0] flex justify-center items-center  -z-10 md:pt-[60px] pt-[40px]">
       <div className=" w-full md:flex md:grid-cols-2 md:p-8 md:m-16 m-0 grid-col-reverse  mx-4 p-2 pt-3 pb-8 lg:pt-0">
         <div className="flex flex-col justify-center md:px-10 px-8 md:max-w-[65%] max-w-full z-10">
           <h1 className="lg:text-6xl md:text-4xl text-[#060229]  text-4xl font-bold py-6 pb-4 flex justify-center items-center">

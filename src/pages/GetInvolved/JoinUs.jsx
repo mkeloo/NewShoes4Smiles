@@ -43,7 +43,7 @@ const JoinUs = () => {
     >
       <div className=" w-full md:flex md:grid-cols-2 md:p-8 mb-8 md:mx-16 m-0 grid-col-reverse  mx-2 p-2">
         <div className="flex flex-col justify-center px-4 md:max-w-[65%] max-w-full pt-8 mt-3">
-          <h1 className="lg:text-6xl md:text-4xl text-[#EAE3D2] text-3xl font-bold py-3 pb-4">
+          <h1 className="lg:text-6xl text-4xl text-[#EAE3D2] font-bold py-3 pb-4">
             Join Us
           </h1>
           <p className="md:py-3 py-1 font-bold text-[#EAE3D2] md:text-2xl lg:text-3xl text-xl">
