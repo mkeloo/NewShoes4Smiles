@@ -254,7 +254,8 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <Link to={'donate'}>
+      {/* <Link to={'donate'}> */}
+      <Link to={'https://account.venmo.com/u/jakeflothe'} target="_blank">
         <button className="p-3 hidden lg:flex px-7 mx-5 bg-lime-600 font-bold rounded-lg text-blue-900  shadow-md hover:shadow-cyan-500 hover:bg-blue-600 hover:shadow-lg hover:scale-110 hover:text-white duration-300">
           Donate
         </button>

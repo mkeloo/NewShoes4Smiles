@@ -48,6 +48,10 @@ function Routers() {
         <Route path="/socials" element={<Socials />} />
         <Route path="/upcoming-events" element={<Events />} />
         <Route path="/donate" element={<Donate />} />
+        {/* <Route
+          path="https://account.venmo.com/u/jakeflothe"
+          element={<Donate />}
+        /> */}
         <Route path="*" element={<Page404 />} />
       </Routes>
     </AnimatePresence>
